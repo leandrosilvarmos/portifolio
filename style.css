@@ -7,7 +7,7 @@
 }
 body{
   color: #fff;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* GLOBAL STYLES */
@@ -26,6 +26,12 @@ p{
   line-height: 2.2; 
   margin-bottom: 1rem;
 }
+
+ul{
+  list-style: none;
+}
+
+
 
 .text-with{
     color: white;
@@ -98,7 +104,7 @@ button:hover{
 }
 
 /* GEOMETRIC SHAPE BACKGROUND */
-.geometric-bg{
+/* .geometric-bg{
   background: #628;
   height: 1100px;
   position: absolute;
@@ -129,7 +135,7 @@ button:hover{
   position: absolute;
   top: 35%;
   width: 120px;
-}
+} */
 
 /* ABOUT */
 
@@ -248,8 +254,68 @@ background-color: #628;
     border: 2px solid dodgerblue;
 }
 
+
+/* FOTTER */
 footer{
-    width: 100%;
-    height: 220px;
-    background-color: #222;
+  background-color: #222;
+  height: 260px;
+  width: 100%;
+
+
+
 }
+
+.ft-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.ft-container h2{
+  padding: 10px 0;
+}
+.ft-container li{
+  padding: 10px 0;
+}
+
+
+.footer-about{
+width:400px;
+border-right: 0.01rem solid #628 ;
+
+}
+
+.footer-contact{
+  width: 280px;
+  border-right: 1px solid #628 ;
+
+}
+
+.footer-social{
+  width: 280px;
+  display: flex;
+justify-content: center;
+}
+
+.footer-social li{
+  padding: 10px 0;
+}
+
+
+
+.footer-social img{
+  width: 30%;
+  border-radius: 50%;
+}
+
+
+.footer-copyright{
+  background-color: #628 ;
+  }
+.footer-copyright p{
+  text-align: center;
+}
+
+
+
