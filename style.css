@@ -1,13 +1,11 @@
 *{
   box-sizing: border-box;
   font-family: sans-serif;
-  line-height: 1;
   margin: 0;
   padding: 0;
 }
 body{
   color: #fff;
-  /* overflow-x: hidden; */
 }
 
 /* GLOBAL STYLES */
@@ -23,14 +21,18 @@ h1{
   padding-bottom: 1.25rem;
 }
 p{
-  line-height: 2.2; 
+  line-height: 2; 
   margin-bottom: 1rem;
 }
 
-ul{
+ul , li{
   list-style: none;
 }
 
+img{
+  max-width: 100%;
+  display: block;
+}
 
 
 .text-with{
@@ -103,8 +105,8 @@ button:hover{
   padding: 1.5rem;
 }
 
-/* GEOMETRIC SHAPE BACKGROUND */
-/* .geometric-bg{
+ /* GEOMETRIC SHAPE BACKGROUND 
+ .geometric-bg{
   background: #628;
   height: 1100px;
   position: absolute;
@@ -140,80 +142,88 @@ button:hover{
 /* ABOUT */
 
 .about{
-    width: 100%;
-    height: 65vh;
+
     display: flex;
     justify-content: space-between;
     margin-top: 10vh;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 
+
+.about > div{
+  margin: 5vh;
+  flex: 1 1 370px;
+
+}
 
 .about-me{
-    width: 65%;
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    border: 1px solid chartreuse;
-
-
+    border: 1px solid rgb(69, 92, 46);
 }
 
-
-
-.about-image{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
 .about img{
-    width: 50%;
-    border-radius: 0.25rem;
+  width: 65%;
+  border-radius: 5px;
+  margin: 0 auto;
 }
+
 
 
   /* SERVICES */
   .services{
-    width: 100%;
-    height: 55vh;
-    margin-top: 10vh;
+    
+    margin: 10vh auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #222;
+    flex-wrap: wrap;
+    max-width: 100% ;
 
 
 }
 
-
-.services-img{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.services > div{
+  flex: 1 1 300px;
+  margin: 5vh;
 }
+
+.services p{
+  text-align: center;
+}
+
+
+.services img{
+  margin: 0 auto;
+}
+
+
 
 
 /* CONTACT */
 .contact{
-    width: 100%;
+    max-width: 100%;
     display: flex;
-    margin-top: 10vh;
-    margin-bottom: 15vh;
+    margin: 10vh 0;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.contact div{
-    padding: 0 50px;
+.contact > div{
+margin: 10vh;
+flex: 1 1 350px;
+
 }
 
 .others{
-    width: 50%;
     display: flex;
     align-items: center;
 }
 
 .form-others{
-    width: 60%;
     display: flex;
     justify-content: center;
 }
@@ -221,11 +231,15 @@ button:hover{
 .form-others button{
     background-color: white;
     color:#628;
+    margin:2rem 0;
+
 }
 .form-others h2{
     text-align: center;
-    padding:25px 0;
+    padding:2rem 0;
 }
+
+
 form{
 width: 450px;
 border-radius: 8px;
@@ -243,7 +257,7 @@ background-color: #628;
 
 .input-field {
     width: 350px;
-    padding: 10px;
+    padding: 1rem;
     outline: none;
     border: 1px solid chartreuse;
     border-radius: 8px;
@@ -258,55 +272,32 @@ background-color: #628;
 /* FOTTER */
 footer{
   background-color: #222;
-  height: 260px;
-  width: 100%;
-
-
-
 }
 
 .ft-container{
   display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
 }
 
+.ft-container > div{
+  margin: 2vh 10vh;
+  flex: 1 1 300px;
+ 
+}
 .ft-container h2{
-  padding: 10px 0;
+  padding: 0.45rem;
 }
+
+
 .ft-container li{
-  padding: 10px 0;
+  padding: 0.85rem;
 }
 
-
-.footer-about{
-width:400px;
-border-right: 0.01rem solid #628 ;
-
-}
-
-.footer-contact{
-  width: 280px;
-  border-right: 1px solid #628 ;
-
-}
-
-.footer-social{
-  width: 280px;
-  display: flex;
-justify-content: center;
-}
-
-.footer-social li{
-  padding: 10px 0;
-}
-
-
-
-.footer-social img{
-  width: 30%;
-  border-radius: 50%;
+.ft-container img{
+  width: 15% ;
+  border-radius: 50px;
 }
 
 
