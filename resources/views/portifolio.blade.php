@@ -47,7 +47,7 @@
                 <spam class="about-me content text-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Mollitia
                     dolores, labore consequatur porro iure tempore voluptatibus officia laboriosam atque aliquid minima
-                    cum dolore fugit velit consequuntur ea omnis obcaecati placeat?</spam>
+                    cum dolore fugit velit consequuntur ea omnis obcaecati eat?</spam>
             </div>
 
         </section>
