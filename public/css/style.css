@@ -1,0 +1,66 @@
+/*aqui fica a parte do codigo do navigation*/
+
+.navigation{
+    width: auto;
+    height: 80vh;
+    background-color: #1D1840;
+    opacity: 0.9;
+}
+
+
+nav{
+width: 100%;
+float: left;
+}
+
+.navigation-header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #5A7334;
+}
+
+.navigation-header li{
+    display: inline;
+}
+
+.navigation-header li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+
+/* Aqui fica a parte das informações social */
+.social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1280px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.social-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-content a{
+    text-decoration: none;
+    border: none;
+}
+
+.social-content .fa{
+    font-size: 8rem;
+    height: auto;
+    color: #5A7334;
+    margin: 8px;
+    padding: 12px;
+
+}
