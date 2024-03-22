@@ -2,9 +2,13 @@
 
 .navigation{
     width: auto;
-    height: 80vh;
-    background-color: #1D1840;
-    opacity: 0.9;
+    height: 100vh;
+    background: #1D1840;
+    background-image:linear-gradient(to top, rgba(4, 20, 102, 0.52), rgba(14, 11, 13, 0.73)),
+    url('../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 
@@ -19,7 +23,7 @@ float: left;
     flex-direction: row;
     margin: 20px;
     padding: 10px 0;
-    border-bottom: 2px solid #5A7334;
+    border-bottom: 4px solid #5A7334;
 }
 
 .navigation-header li{
@@ -38,17 +42,16 @@ float: left;
 /* Aqui fica a parte das informações social */
 .social{
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    width: 1280px;
-    margin: 20px;
-    background-color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
 }
 
 .social-content{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .social-content a{
@@ -63,4 +66,147 @@ float: left;
     margin: 8px;
     padding: 12px;
 
+}
+
+.social-content .text-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "DM Sams", sans-serif;
+
+}
+
+.social-content .text-subtitle{
+color: aliceblue;
+font-weight: 200;
+font-size: 16px;
+margin-top: 10px;
+line-break: anywhere;
+width: 350px;
+text-align: center;
+}
+
+/* PARTE DO SOBRE MIM */
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 18px 80px;
+}
+
+
+
+.about-me .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 700px;
+    padding: 0;
+}
+
+
+.about-me .content .text-title{
+    line-break: anywhere;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.about-me .content .text-subtitle{
+    width: 780px;
+    line-break: anywhere;
+    font-weight: 200;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+/* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMAÇÃO ---------------------- */
+.tecnologias{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tecnologias__header{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+}
+
+.tecnologias__header .text-title{ 
+    color: #fff;
+    font-family: 700;
+    font-size: 40px;
+}
+
+.tecnologias__header .text-subtitle{
+    color: #fff;
+    padding: 28px 0;
+    font-size: 18px;
+    line-break: anywhere;
+    width: 500px;
+    text-align: center;
+}
+
+
+.tecnologias__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    width: 920px;
+    border-radius: 22px;
+
+
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+
+}
+
+.one, .two, .three{
+    border-right: 1px solid black;
+
+}
+
+.display .fa{
+    font-size: 6rem;
+    height: auto;
+    color: #5A7334;
+    margin: 8px;
+    padding: 12px;
+}
+
+
+.display .text-title{
+    text-align: center;
+    padding: 16px 0;
+    font-weight: 700;
+    color: #0d0d0d;
+    font-size: 28px;
+}
+
+.display .text-subtitle{
+    text-align: center;
+    padding: 20px 0;
 }
