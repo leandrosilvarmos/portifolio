@@ -108,6 +108,41 @@
         </div>
     </section>
 
+    <section class="projects">
+        <div class="projects__header">
+            <spam class="title">Conheça alguns dos meus projetos</spam>
+            <spam class="sub-title">It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout. </spam>
+        </div>
+        <div class="projects__content">
+            <div class="project">
+                <spam class="title">Projeto 1</spam>
+                <button> Acesse o repositorio</button>
+            </div>
+            <div class="project">
+                <spam class="title">Projeto 2</spam>
+                <button> Acesse o repositorio</button>
+            </div>
+            <div class="project">
+                <spam class="title">Projeto 3</spam>
+                <button> Acesse o repositorio</button>
+            </div>
+            <div class="project">
+                <spam class="title">Projeto 4</spam>
+                <button> Acesse o repositorio</button>
+            </div>
+            <div class="project">
+                <spam class="title">Projeto 5</spam>
+                <button> Acesse o repositorio</button>
+            </div>
+            <div class="project">
+                <spam class="title">Projeto 6</spam>
+                <button> Acesse o repositorio</button>
+            </div>
+
+        </div>
+    </section>
+
 
 </body>
 

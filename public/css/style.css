@@ -134,9 +134,10 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/wave.png);
+    background-color: #0056b3;
+    /* background-image: url(../images/wave.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .tecnologias__header{
@@ -209,4 +210,62 @@ padding: 10px;
 .display .text-subtitle{
     text-align: center;
     padding: 20px 0;
+}
+
+/* AQUI FICA A PARTE DE PROJETOS */
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.projects__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px 0;
+
+}
+
+.projects__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project {
+    width: 300px;
+    height: 160px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #1D1840;
+
+}
+
+.project>.title {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #5A7334;
+    border-radius: 5px ;
+    border-color: #5A7334;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
