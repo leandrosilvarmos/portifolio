@@ -143,6 +143,90 @@
         </div>
     </section>
 
+    <section class="storyline">
+        <div class="storyline__header">
+            <span class="tittle">
+                Conheça um pouco mais das minhas experiencias
+            </span>
+            <div class="storyline__curriculo">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem placeat maxime tempore ipsa
+                    fuga! Optio porro cumque quisquam, rem temporibus voluptatem fuga error voluptas repudiandae
+                </span>
+                <a href="">Acesse meu Curriculo!</a>
+            </div>
+        </div>
+
+        <div class="storyline__content">
+            <div class="experiencia">
+                <span class="subtittle"> 1. Experiencia</span>
+                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
+                    delectus debitis cupiditate itaque.</span>
+            </div>
+            <div class="experiencia">
+                <span class="subtittle"> 2. Experiencia</span>
+                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
+                    delectus debitis cupiditate itaque.</span>
+            </div>
+            <div class="experiencia">
+                <span class="subtittle"> 3. Experiencia</span>
+                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
+                    delectus debitis cupiditate itaque.</span>
+            </div>
+            <div class="experiencia">
+                <span class="subtittle"> 4. Experiencia</span>
+                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
+                    delectus debitis cupiditate itaque.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedbacks">
+        <div class="feedbacks__header">
+            <span class="tittle">Confira alguns feedbacks de clientes e empresas que ja passei</span>
+            <span class="subtittle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum est vel repellat
+                sint vitae qui quia omnis culpa sequi. amet consectetur adipisicing elit. Harum est vel repellat
+                sint vitae qui quia omnis culpa sequi</span>
+        </div>
+        <div class="feedbacks__content">
+
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact__header">
+            <span class="tittle">Preencha o formulário abaixo</span>
+            <span class="subtittle">Deixando o seu feedback por algum serviço prestado,ou preencha descrevendo suas
+                necessidas, e iremos entrar em contato para realizar o seu orçamento</span>
+        </div>
+
+        <div class="contact__form">
+            <form action="#">
+
+                <div class="group-form">
+                    <input type="text" name="nome" id="" placeholder="Informe seu nome">
+                    <input type="text" name="empresa_cliente" id="" placeholder="Nome da sua empresa ou seu nome completo">
+                </div>
+                <div class="group-form">
+                    <div class="rating">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="group-form">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </section>
 
 </body>
 
