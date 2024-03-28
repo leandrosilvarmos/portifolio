@@ -134,10 +134,9 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0056b3;
-    /* background-image: url(../images/wave.png);
+    background-image: url(../images/wave.png);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .tecnologias__header{
@@ -420,49 +419,52 @@ text-align: center;
 
 }
 
-.contact__form {
+
+.contact__form{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    width: 920px;
 }
 
-.contact__form input,
-.contact__form textarea {
-    border: 1px solid #ccc; /* Adiciona uma borda para distinguir os campos */
+.group-form {
+    display: flex;
+    flex-direction: row; /* Alteração para alinhar os inputs lado a lado */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 100%; /* Garante que os campos não ultrapassem o limite do contêiner */
-    height: 40px; /* Aumenta a altura dos campos para melhorar a acessibilidade */
-    margin: 10px 0; /* Espaçamento entre os campos */
-    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência */
+    margin-bottom: 10px;
+}
+
+.group-form input,
+.group-form textarea,
+.group-form fieldset {
+    border: 1px solid #ccc;
+    flex: 1; /* Adicionado para que os inputs ocupem todo o espaço disponível */
+    width: 280px;
+    margin-right: 10px; /* Espaçamento entre os inputs */
+    padding: 12px;
     border-radius: 8px;
-    box-sizing: border-box; /* Garante que o preenchimento e a borda sejam incluídos no tamanho total */
+    box-sizing: border-box;
 }
 
-.contact__form textarea {
-    height: 150px; /* Define uma altura maior para a área de texto */
+
+
+.group-form.rating {
+    display: flex;
+    align-items: center;
 }
 
-.contact__form button[type="submit"] {
-    border: none;
-    border-radius: 8px;
-    padding: 15px 50px;
-    background-color: #1D1840; /* Cor de fundo chamativa */
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.rating-label {
+    font-size: 20px;
+    color: #ddd;
+    margin-right: 10px;
 }
-
-.contact__form button[type="submit"]:hover {
-    background-color: #F5F5F5; 
-    color:#0d0d0d ;
-    font-weight: 700;
-}
-
 
 .rating {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .rating input {
@@ -470,9 +472,9 @@ text-align: center;
 }
 
 .rating label {
-    font-size: 16px;
+    font-size: 25px;
     color: #ddd;
-    margin-right: 10px; /* Espaçamento entre as estrelas */
+    margin-right: 5px; /* Reduzi a margem para evitar o corte */
 }
 
 .rating label:before {
@@ -480,11 +482,105 @@ text-align: center;
 }
 
 .rating input:checked ~ label {
-    color: #f90;
+    color: rgb(78, 54, 19);
 }
 
-/* Ajustes no estilo do textarea */
-textarea {
-    width: calc(100% - 100px); /* Ajusta a largura do textarea para ocupar o espaço disponível */
-    margin-right: 10px; /* Espaçamento entre o campo de classificação e o textarea */
+button[type="submit"] {
+    border: none;
+    border-radius: 8px;
+    padding: 15px 50px;
+    background-color: #1D1840;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color:
+}
+
+
+/* AQUI FICA A PARTE DO FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around; /* Coloca o conteúdo dos filhos no início e no final do elemento pai */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 20px;
+    background-color: #292526; /* Apenas para visualização */
+    color: #fff; /* Apenas para visualização */
+    border-radius: 8px;
+    height: 30vh;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 260px;
+    margin-bottom: 20px; 
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 5px; /* Espaçamento entre os elementos */
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.footer__contacts li {
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts .fa{
+    font-size: 28px;
+    height: auto;
+    color: #5A7334;
+    margin: 0 8px;
+    
+}
+
+.footer__contacts li span {
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.footer__content>a{
+    width: 200px;
+    text-decoration: none;
+    background-color: #5A7334;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #F5F5F5;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer__menu>a{
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
 }

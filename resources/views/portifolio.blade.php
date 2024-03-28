@@ -201,32 +201,68 @@
 
         <div class="contact__form">
             <form action="#">
-
-                <div class="group-form">
-                    <input type="text" name="nome" id="" placeholder="Informe seu nome">
-                    <input type="text" name="empresa_cliente" id="" placeholder="Nome da sua empresa ou seu nome completo">
-                </div>
-                <div class="group-form">
-                    <div class="rating">
-                        <fieldset class="rating">
-                            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
-                            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
-                            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
-                            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
-                            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
-                        </fieldset>
+                <div class="input-group">
+                    <div class="group-form">
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
+                        <input type="text" name="empresa_cliente" id="empresa_cliente"
+                            placeholder="Nome da sua empresa ou seu nome completo">
                     </div>
                 </div>
-
                 <div class="group-form">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+                </div>
+                <div class="group-form">
+                    <label for="avaliacao" class="rating-label">Deixe aqui sua avaliação</label>
+                    <fieldset class="rating">
+                        <input type="radio" id="star1" name="rating" value="1"><label
+                            for="star1"></label>
+                        <input type="radio" id="star2" name="rating" value="2"><label
+                            for="star2"></label>
+                        <input type="radio" id="star3" name="rating" value="3"><label
+                            for="star3"></label>
+                        <input type="radio" id="star4" name="rating" value="4"><label
+                            for="star4"></label>
+                        <input type="radio" id="star5" name="rating" value="5"><label
+                            for="star5"></label>
+                    </fieldset>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
         </div>
 
     </section>
+    <footer>
+        <div class="footer__content">
+            <span class="title">Portfolio Profissional</span>
+            <div class="footer__contacts">
+                <li>
+                    <img src="" class="fa fa-solid fa-phone" alt="">
+                    <span>(11)95237-3595</span>
+                </li>
+                <li>
+                    <img src="" alt="" class="fa fa-regular fa-envelope">
+                    <span>leandro.ramos.silva@gmail.com</span>
+                </li>
+                <li>
+                    <img src="" alt="" class="fa fa-brands fa-linkedin-in">
+                    <span>linkedin.com/leandro-silva</span>
+                </li>
+            </div>
+            <a href="#">Entre em contato e saiba mais!</a>
+        </div>
+
+        <div class="footer__menu">
+            <a href="">SOBRE MIM</a>
+            <a href="">TECNOLOGIAS</a>
+            <a href="">PROJETOS</a>
+            <a href="">EXPERIENCIAS</a>
+            <a href="">FEEDBACKS</a>
+        </div>
+        {{-- <span>Direitos reservados - Leandro Ramos Silva @2024</span> --}}
+
+
+    </footer>
+
 
 </body>
 
