@@ -25,29 +25,29 @@
 
         <div class="social">
             <div class="social-content">
-                <a href="" class="social-content image">
+                <a href="https://github.com/leandrosilvarmos" class="social-content image">
                     <img src="" class="fa fa-brands fa-github" alt="">
-                    <span class="text-title"> Projetos</span>
-                    <spam class="text-subtitle">Conheça alguns projetos ja aplicados é em produção.
+                    <span class="tittle"> Projetos</span>
+                    <spam class="subtittle">Conheça alguns projetos ja aplicados é em produção.
                     </spam>
                 </a>
             </div>
             <div class="social-content">
                 <a href="" class="social-content image">
                     <img src="" class="fa fa-solid fa-comments-dollar" alt="">
-                    <span class="text-title">Orçamentos</span>
-                    <spam class="text-subtitle">Faça parte da minha network e assim podemos trocar
+                    <span class="tittle">Orçamentos</span>
+                    <spam class="subtittle">Faça parte da minha network e assim podemos trocar
                         vivencias e experiencias.
                     </spam>
                 </a>
             </div>
             <div class="social-content">
-                <a href="" class="social-content image">
+                <a href="https://www.linkedin.com/in/leandro-ramos-silva/" class="social-content image">
                     <img src="" class="fa fa-brands fa-linkedin-in" alt="">
-                    <span class="text-title">Rede de Contatos</span>
-                    <spam class="text-subtitle">Preencha o formulário com suas necessidades, assim
+                    <span class="tittle">Rede de Contatos</span>
+                    <spam class="subtittle">Preencha o formulário com suas necessidades, assim
                         podemos te passar um orçamento qualificado.
-                        elit.</spam>
+                        </spam>
                 </a>
             </div>
         </div>
@@ -55,14 +55,12 @@
         <section class="about-me">
             <div class="about-me image"><img src="{{ asset('images/foto-perfil.png') }}" alt="imagem pessoal"></div>
             <div class="about-me content">
-                <spam class="text-title">Leandro ramos Silva
+                <spam class="tittle">Leandro Ramos Silva
                     <p> Desenvolvedor Web Front e Back End</p>
                 </spam>
-                <spam class="text-subtitle">Contrary to popular belief, Lorem Ipsum is not simply
-                    random text. It has roots in a piece of classical Latin literature from 45
-                    BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
-                    in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                    and going through the cites of the word in classical literature, discovered the undoubtable source.
+                <spam class="subtittle">Profissional experiente há 5 anos como Analista de Sistemas, especializado em CRM’s, 
+                    promagação Back e Front-End e Analista de Dados. Contribuo para o alcance de metas empresariais, desenvolvendo automações e 
+                    integrações para aprimorar processos comerciais e estratégias de marketing.
                 </spam>
             </div>
 
@@ -71,72 +69,79 @@
 
     <section class="tecnologias">
         <div class="tecnologias__header">
-            <spam class="text-title"> Linguagens e Frameworks</spam>
-            <spam class="text-subtitle">It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout. </spam>
+            <spam class="tittle"> Linguagens e Frameworks</spam>
+            <spam class="subtittle">Essas são algumas das minhas especialidades que atuo e realizo os projetos dos meus clientes </spam>
         </div>
 
         <div class="tecnologias__content">
             <div class="display one">
-                <img src="" class="fa fa-brands fa-github" alt="">
-                <span class="text-title">Laravel</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
+                <img src="" class="fa fa-brands fa-laravel alt="">
+                <span class=" tittle">Laravel</span>
+                <span class="subtittle"> - Criação de sistemas para empresas</span>
+                <span class="subtittle"> - Integração do seu site com  outros sistemas ou aplicações já prontos</span>
+                <span class="subtittle"> - Manutenção de rotina em sistemas, e inclusão de novas funcionalidades ao seu criterio.</span>
             </div>
             <div class="display two">
-                <img src="" class="fa fa-brands fa-github" alt="">
-                <span class="text-title">Laravel</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
+                <img src="" class="fa fa-brands fa-node-js" alt="">
+                <span class="tittle">Java Script</span>
+                <span class="subtittle"> - Aplicação de novas funcionalidades no seu site</span>
+                <span class="subtittle"> - Criação de novas regras e manutenção em possíveis erros do seu site</span>
+                <span class="subtittle"> - Adequação do visual da sua pagina, deixando ele mais atraente e mais personalizado.</span>
             </div>
             <div class="display three">
-                <img src="" class="fa fa-brands fa-github" alt="">
-                <span class="text-title">Laravel</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
+                <img src="" class="fa fa-solid fa-database" alt="">
+                <span class="tittle">MySql / Oracle</span>
+                <span class="subtittle"> - Gerenciamentos dos dados da sua aplicação e armazenamento com segurança</span>
+                <span class="subtittle"> - Análise e criação de novos relatórios com os dados presente em seu sistema</span>
+                <span class="subtittle"> - Manutenção de regras de négocio existentes e inclusão de novas conforme necessario.</span>
             </div>
+          
             <div class="display for">
-                <img src="" class="fa fa-brands fa-github" alt="">
-                <span class="text-title">Laravel</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
-                <span class="text-subtitle"> - Lorem ipsum dolor sit amet consectetur.</span>
+                <img src="" class="fa fa-solid fa-people-group" alt="">
+                <span class="tittle">Crm's</span>
+                <span class="subtittle"> - Atuação em Crm's para captura de novos leads e melhorar a qualificação dos mesmos</span>
+                <span class="subtittle"> - Análise e consultoria do seu négocios para melhorar as regras de négocio existentes </span>
+                <span class="subtittle"> - Atuação em novas campanhas de marketing nas redes socias para geração de leads.</span>
+            </div>
+            <div class="display five">
+                <img src="" class="fa fa-brands fa-wordpress-simple" alt="">
+                <span class="tittle">Wordpress</span>
+                <span class="subtittle"> - Criação de Landing pages para sua loja, comercio ou produto</span>
+                <span class="subtittle"> - Criação de blogs individuais personalizados de acordo com a sua necessidade</span>
+                <span class="subtittle"> - Manutenção do seu site e integração do seu site com outras plataformas, como facebook e instagram. </span>
             </div>
         </div>
     </section>
 
     <section class="projects">
         <div class="projects__header">
-            <spam class="title">Conheça alguns dos meus projetos</spam>
-            <spam class="sub-title">It is a long established fact that a reader will be distracted by the readable
+            <spam class="tittle">Conheça alguns dos meus projetos</spam>
+            <spam class="subtittle">It is a long established fact that a reader will be distracted by the readable
                 content of a page when looking at its layout. </spam>
         </div>
         <div class="projects__content">
             <div class="project">
-                <spam class="title">Projeto 1</spam>
+                <spam class="tittle">Projeto 1</spam>
                 <button> Acesse o repositorio</button>
             </div>
             <div class="project">
-                <spam class="title">Projeto 2</spam>
+                <spam class="tittle">Projeto 2</spam>
                 <button> Acesse o repositorio</button>
             </div>
             <div class="project">
-                <spam class="title">Projeto 3</spam>
+                <spam class="tittle">Projeto 3</spam>
                 <button> Acesse o repositorio</button>
             </div>
             <div class="project">
-                <spam class="title">Projeto 4</spam>
+                <spam class="tittle">Projeto 4</spam>
                 <button> Acesse o repositorio</button>
             </div>
             <div class="project">
-                <spam class="title">Projeto 5</spam>
+                <spam class="tittle">Projeto 5</spam>
                 <button> Acesse o repositorio</button>
             </div>
             <div class="project">
-                <spam class="title">Projeto 6</spam>
+                <spam class="tittle">Projeto 6</spam>
                 <button> Acesse o repositorio</button>
             </div>
 
@@ -204,8 +209,7 @@
                 <div class="input-group">
                     <div class="group-form">
                         <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
-                        <input type="text" name="empresa_cliente" id="empresa_cliente"
-                            placeholder="Nome da sua empresa ou seu nome completo">
+                        <input type="text" name="empresa_cliente" id="empresa_cliente" placeholder="Nome da sua empresa ou seu nome completo">
                     </div>
                 </div>
                 <div class="group-form">
@@ -214,16 +218,11 @@
                 <div class="group-form">
                     <label for="avaliacao" class="rating-label">Deixe aqui sua avaliação</label>
                     <fieldset class="rating">
-                        <input type="radio" id="star1" name="rating" value="1"><label
-                            for="star1"></label>
-                        <input type="radio" id="star2" name="rating" value="2"><label
-                            for="star2"></label>
-                        <input type="radio" id="star3" name="rating" value="3"><label
-                            for="star3"></label>
-                        <input type="radio" id="star4" name="rating" value="4"><label
-                            for="star4"></label>
-                        <input type="radio" id="star5" name="rating" value="5"><label
-                            for="star5"></label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
                     </fieldset>
                 </div>
                 <button type="submit">Enviar</button>
@@ -233,7 +232,7 @@
     </section>
     <footer>
         <div class="footer__content">
-            <span class="title">Portfolio Profissional</span>
+            <span class="tittle">Portfolio Profissional</span>
             <div class="footer__contacts">
                 <li>
                     <img src="" class="fa fa-solid fa-phone" alt="">

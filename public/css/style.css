@@ -33,13 +33,20 @@ float: left;
 .navigation-header li a{
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 700;
+    color: #DFEBF2;
 
 }
 
+.navigation-header li a:hover{
+    background-color: #0d0d0d;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
 
-/* Aqui fica a parte das informações social */
+
+/* Aqui fica a parte das informaï¿½ï¿½es social */
 .social{
     display: flex;
     flex-direction: row;
@@ -68,21 +75,19 @@ float: left;
 
 }
 
-.social-content .text-title{
-    color: #fff;
+.social-content .tittle{
+    color: #DFEBF2;
     font-weight: 700;
     font-size: 22px;
-    font-family: "DM Sams", sans-serif;
 
 }
 
-.social-content .text-subtitle{
-color: aliceblue;
-font-weight: 200;
-font-size: 16px;
+.social-content .subtittle{
+color: #DFEBF2;
+font-weight: 400;
+font-size: 18px;
 margin-top: 10px;
-line-break: anywhere;
-width: 350px;
+width: 310px;
 text-align: center;
 }
 
@@ -109,25 +114,25 @@ text-align: center;
 }
 
 
-.about-me .content .text-title{
+.about-me .content .tittle{
     line-break: anywhere;
-    color: #fff;
+    color: #DFEBF2;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
     margin: 20px 0;
     line-height: 1.5;
 }
 
-.about-me .content .text-subtitle{
-    width: 780px;
-    line-break: anywhere;
+.about-me .content .subtittle{
+    width: 700px;
     font-weight: 200;
-    color: #fff;
+    color: #DFEBF2;
     font-size: 22px;
-    line-height: 1.8;
+    line-height: 1.5;
+    text-align: justify;
 }
 
-/* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMAÇÃO ---------------------- */
+/* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMAï¿½ï¿½O ---------------------- */
 .tecnologias{
     height: 90vh;
     display: flex;
@@ -137,27 +142,28 @@ text-align: center;
     background-image: url(../images/wave.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
 }
 
 .tecnologias__header{
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
-padding: 10px;
+margin-top: 10px;
+padding: 10px 0;
 }
 
-.tecnologias__header .text-title{ 
+.tecnologias__header .tittle{ 
     color: #fff;
     font-family: 700;
     font-size: 40px;
+    font-weight: 700;
 }
 
-.tecnologias__header .text-subtitle{
+.tecnologias__header .subtittle{
     color: #fff;
-    padding: 28px 0;
+    padding:12px 0;
     font-size: 18px;
-    line-break: anywhere;
     width: 500px;
     text-align: center;
 }
@@ -169,8 +175,9 @@ padding: 10px;
     justify-content: space-around;
     align-items: center;
     background-color: aqua;
-    width: 920px;
+    width: 1250px;
     border-radius: 22px;
+    margin: 22px 0;
 
 
 }
@@ -178,37 +185,39 @@ padding: 10px;
 .display{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 22px;
-
+    width: 520px;
+    height: 500px;
 }
 
-.one, .two, .three{
+.one, .two, .three , .for {
     border-right: 1px solid black;
 
 }
 
 .display .fa{
-    font-size: 6rem;
+    font-size: 5rem;
     height: auto;
     color: #5A7334;
-    margin: 8px;
-    padding: 12px;
+    text-align: center;
 }
 
 
-.display .text-title{
+.display .tittle{
     text-align: center;
-    padding: 16px 0;
     font-weight: 700;
     color: #0d0d0d;
     font-size: 28px;
 }
 
-.display .text-subtitle{
+.display .subtittle{
     text-align: center;
-    padding: 20px 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #0d0d0d;
+    font-style: italic;
 }
 
 /* AQUI FICA A PARTE DE PROJETOS */
@@ -216,7 +225,7 @@ padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 0;
+    margin: 5rem 0;
 }
 
 .projects__header{
@@ -248,7 +257,7 @@ padding: 10px;
 
 }
 
-.project>.title {
+.project>.tittle {
     font-size: 22px;
     color: #fff;
     font-weight: 700;
@@ -276,7 +285,7 @@ button:hover {
     height: 60vh;
     background-color: #5A7334;
     opacity: 0.8;
-    margin-top: 10rem;
+    margin-top: 5rem;
     border-radius: 12px;
 }
 
@@ -386,11 +395,11 @@ text-align: center;
 
 .contact{
   
-        width: 80%; /* Definindo uma largura máxima para a seção */
+        width: 80%; /* Definindo uma largura mï¿½xima para a seï¿½ï¿½o */
         max-width: 920px;
-        height: 60vh; /* Definindo uma altura fixa para a seção */
+        height: 60vh; /* Definindo uma altura fixa para a seï¿½ï¿½o */
         margin: 5rem auto; /* Centralizando horizontalmente */
-        background-color: #5A7334; /* Apenas para visualização, pode ser removido */
+        background-color: #5A7334; /* Apenas para visualizaï¿½ï¿½o, pode ser removido */
         opacity: 0.8;
         border-radius: 12px;
 }
@@ -429,7 +438,7 @@ text-align: center;
 
 .group-form {
     display: flex;
-    flex-direction: row; /* Alteração para alinhar os inputs lado a lado */
+    flex-direction: row; /* Alteraï¿½ï¿½o para alinhar os inputs lado a lado */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -440,9 +449,9 @@ text-align: center;
 .group-form textarea,
 .group-form fieldset {
     border: 1px solid #ccc;
-    flex: 1; /* Adicionado para que os inputs ocupem todo o espaço disponível */
+    flex: 1; /* Adicionado para que os inputs ocupem todo o espaï¿½o disponï¿½vel */
     width: 280px;
-    margin-right: 10px; /* Espaçamento entre os inputs */
+    margin-right: 10px; /* Espaï¿½amento entre os inputs */
     padding: 12px;
     border-radius: 8px;
     box-sizing: border-box;
@@ -503,11 +512,11 @@ button[type="submit"]:hover {
 /* AQUI FICA A PARTE DO FOOTER */
 footer {
     display: flex;
-    justify-content: space-around; /* Coloca o conteúdo dos filhos no início e no final do elemento pai */
+    justify-content: space-around; /* Coloca o conteï¿½do dos filhos no inï¿½cio e no final do elemento pai */
     align-items: center; /* Alinha verticalmente ao centro */
     padding: 20px;
-    background-color: #292526; /* Apenas para visualização */
-    color: #fff; /* Apenas para visualização */
+    background-color: #292526; /* Apenas para visualizaï¿½ï¿½o */
+    color: #fff; /* Apenas para visualizaï¿½ï¿½o */
     border-radius: 8px;
     height: 30vh;
 }
@@ -520,7 +529,7 @@ footer {
     margin-bottom: 20px; 
 }
 
-.title{
+.tittle{
     font-size: 30px;
     font-weight: 600;
 }
@@ -528,12 +537,12 @@ footer {
 .footer__contacts {
     display: flex;
     flex-direction: row;
-    gap: 5px; /* Espaçamento entre os elementos */
+    gap: 5px; /* Espaï¿½amento entre os elementos */
 }
 
 .footer__contacts {
     display: flex;
-    gap: 10px; /* Espaçamento entre os elementos */
+    gap: 10px; /* Espaï¿½amento entre os elementos */
 }
 
 .footer__contacts li {
@@ -557,7 +566,7 @@ footer {
 .footer__menu {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaçamento entre os elementos */
+    gap: 10px; /* Espaï¿½amento entre os elementos */
 }
 
 .footer__content>a{
@@ -580,7 +589,7 @@ footer {
     padding: 10px 0;
 }
 
-.title {
+.tittle {
     font-weight: bold;
-    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+    margin-bottom: 10px; /* Adiciona espaï¿½o abaixo do tï¿½tulo */
 }
