@@ -47,7 +47,7 @@
                     <span class="tittle">Rede de Contatos</span>
                     <spam class="subtittle">Preencha o formulário com suas necessidades, assim
                         podemos te passar um orçamento qualificado.
-                        </spam>
+                    </spam>
                 </a>
             </div>
         </div>
@@ -58,8 +58,10 @@
                 <spam class="tittle">Leandro Ramos Silva
                     <p> Desenvolvedor Web Front e Back End</p>
                 </spam>
-                <spam class="subtittle">Profissional experiente há 5 anos como Analista de Sistemas, especializado em CRM’s, 
-                    promagação Back e Front-End e Analista de Dados. Contribuo para o alcance de metas empresariais, desenvolvendo automações e 
+                <spam class="subtittle">Profissional experiente há 5 anos como Analista de Sistemas, especializado em
+                    CRM’s,
+                    promagação Back e Front-End e Analista de Dados. Contribuo para o alcance de metas empresariais,
+                    desenvolvendo automações e
                     integrações para aprimorar processos comerciais e estratégias de marketing.
                 </spam>
             </div>
@@ -70,7 +72,8 @@
     <section class="tecnologias">
         <div class="tecnologias__header">
             <spam class="tittle"> Linguagens e Frameworks</spam>
-            <spam class="subtittle">Essas são algumas das minhas especialidades que atuo e realizo os projetos dos meus clientes </spam>
+            <spam class="subtittle">Essas são algumas das minhas especialidades que atuo e realizo os projetos dos meus
+                clientes </spam>
         </div>
 
         <div class="tecnologias__content">
@@ -78,37 +81,47 @@
                 <img src="" class="fa fa-brands fa-laravel alt="">
                 <span class=" tittle">Laravel</span>
                 <span class="subtittle"> - Criação de sistemas para empresas</span>
-                <span class="subtittle"> - Integração do seu site com  outros sistemas ou aplicações já prontos</span>
-                <span class="subtittle"> - Manutenção de rotina em sistemas, e inclusão de novas funcionalidades ao seu criterio.</span>
+                <span class="subtittle"> - Integração do seu site com outros sistemas ou aplicações já prontos</span>
+                <span class="subtittle"> - Manutenção de rotina em sistemas, e inclusão de novas funcionalidades ao seu
+                    criterio.</span>
             </div>
             <div class="display two">
                 <img src="" class="fa fa-brands fa-node-js" alt="">
                 <span class="tittle">Java Script</span>
                 <span class="subtittle"> - Aplicação de novas funcionalidades no seu site</span>
                 <span class="subtittle"> - Criação de novas regras e manutenção em possíveis erros do seu site</span>
-                <span class="subtittle"> - Adequação do visual da sua pagina, deixando ele mais atraente e mais personalizado.</span>
+                <span class="subtittle"> - Adequação do visual da sua pagina, deixando ele mais atraente e mais
+                    personalizado.</span>
             </div>
             <div class="display three">
                 <img src="" class="fa fa-solid fa-database" alt="">
                 <span class="tittle">MySql / Oracle</span>
-                <span class="subtittle"> - Gerenciamentos dos dados da sua aplicação e armazenamento com segurança</span>
-                <span class="subtittle"> - Análise e criação de novos relatórios com os dados presente em seu sistema</span>
-                <span class="subtittle"> - Manutenção de regras de négocio existentes e inclusão de novas conforme necessario.</span>
+                <span class="subtittle"> - Gerenciamentos dos dados da sua aplicação e armazenamento com
+                    segurança</span>
+                <span class="subtittle"> - Análise e criação de novos relatórios com os dados presente em seu
+                    sistema</span>
+                <span class="subtittle"> - Manutenção de regras de négocio existentes e inclusão de novas conforme
+                    necessario.</span>
             </div>
-          
+
             <div class="display for">
                 <img src="" class="fa fa-solid fa-people-group" alt="">
                 <span class="tittle">Crm's</span>
-                <span class="subtittle"> - Atuação em Crm's para captura de novos leads e melhorar a qualificação dos mesmos</span>
-                <span class="subtittle"> - Análise e consultoria do seu négocios para melhorar as regras de négocio existentes </span>
-                <span class="subtittle"> - Atuação em novas campanhas de marketing nas redes socias para geração de leads.</span>
+                <span class="subtittle"> - Atuação em Crm's para captura de novos leads e melhorar a qualificação dos
+                    mesmos</span>
+                <span class="subtittle"> - Análise e consultoria do seu négocios para melhorar as regras de négocio
+                    existentes </span>
+                <span class="subtittle"> - Atuação em novas campanhas de marketing nas redes socias para geração de
+                    leads.</span>
             </div>
             <div class="display five">
                 <img src="" class="fa fa-brands fa-wordpress-simple" alt="">
                 <span class="tittle">Wordpress</span>
                 <span class="subtittle"> - Criação de Landing pages para sua loja, comercio ou produto</span>
-                <span class="subtittle"> - Criação de blogs individuais personalizados de acordo com a sua necessidade</span>
-                <span class="subtittle"> - Manutenção do seu site e integração do seu site com outras plataformas, como facebook e instagram. </span>
+                <span class="subtittle"> - Criação de blogs individuais personalizados de acordo com a sua
+                    necessidade</span>
+                <span class="subtittle"> - Manutenção do seu site e integração do seu site com outras plataformas, como
+                    facebook e instagram. </span>
             </div>
         </div>
     </section>
@@ -116,33 +129,39 @@
     <section class="projects">
         <div class="projects__header">
             <spam class="tittle">Conheça alguns dos meus projetos</spam>
-            <spam class="subtittle">It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout. </spam>
+            <spam class="subtittle">Abaixo você pode conferir alguns dos meus projetos,
+                que já estão em produção e outros que estão em andamento para conher melhor o meu trabalho. </spam>
         </div>
         <div class="projects__content">
-            <div class="project">
-                <spam class="tittle">Projeto 1</spam>
-                <button> Acesse o repositorio</button>
+            <div class="project one">
+                <spam class="tittle">DecFusion - Ecommerce</spam>
+                <a href="https://github.com/leandrosilvarmos/decFusion"><button> Acesse para saber mais!</button></a>
+
             </div>
-            <div class="project">
-                <spam class="tittle">Projeto 2</spam>
-                <button> Acesse o repositorio</button>
+            <div class="project two">
+                <spam class="tittle">Dashborad Analytics</spam>
+                <a href="https://analytics.zoho.com/open-view/1439015000030043522"><button> Acesse para saber
+                        mais!</button></a>
             </div>
-            <div class="project">
-                <spam class="tittle">Projeto 3</spam>
-                <button> Acesse o repositorio</button>
+            <div class="project three">
+                <spam class="tittle">Dashboard comercial</spam>
+                <a href="https://analytics.zoho.com/open-view/1439015000013892008"><button> Acesse para saber
+                        mais!</button></a>
             </div>
-            <div class="project">
-                <spam class="tittle">Projeto 4</spam>
-                <button> Acesse o repositorio</button>
+            <div class="project for">
+                <spam class="tittle">Projetos para um Hospital</spam>
+                <a href="https://github.com/leandrosilvarmos/hesapfiles">
+                    <button> Acesse para saber mais!</button>
+                </a>
+
             </div>
-            <div class="project">
-                <spam class="tittle">Projeto 5</spam>
-                <button> Acesse o repositorio</button>
+            <div class="project five">
+                <spam class="tittle">Hamburgueria</spam>
+                <button> Acesse para saber mais!</button>
             </div>
-            <div class="project">
-                <spam class="tittle">Projeto 6</spam>
-                <button> Acesse o repositorio</button>
+            <div class="project six">
+                <spam class="tittle">Montagem de PC's</spam>
+                <button> Acesse para saber mais!</button>
             </div>
 
         </div>
@@ -151,13 +170,15 @@
     <section class="storyline">
         <div class="storyline__header">
             <span class="tittle">
-                Conheça um pouco mais das minhas experiencias
+                Conheça um pouco mais das minhas experiencias!
             </span>
             <div class="storyline__curriculo">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem placeat maxime tempore ipsa
-                    fuga! Optio porro cumque quisquam, rem temporibus voluptatem fuga error voluptas repudiandae
+                <span class="tittle">Abaixo você pode acessar meu currículo profissional e saber mais da minha
+                    trajetoria profissional,
+                    podendo assim me informar sobre vagas am aberto na sua empresa, ou me indicar para algum recrutador.
                 </span>
-                <a href="">Acesse meu Curriculo!</a>
+                <a href="https://drive.google.com/file/d/1_wnVLo7gEC_NezEekiz8lkEATAFm_0km/view?usp=drive_link">Acesse
+                    meu Curriculo!</a>
             </div>
         </div>
 
@@ -209,7 +230,8 @@
                 <div class="input-group">
                     <div class="group-form">
                         <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
-                        <input type="text" name="empresa_cliente" id="empresa_cliente" placeholder="Nome da sua empresa ou seu nome completo">
+                        <input type="text" name="empresa_cliente" id="empresa_cliente"
+                            placeholder="Nome da sua empresa ou seu nome completo">
                     </div>
                 </div>
                 <div class="group-form">
@@ -218,11 +240,16 @@
                 <div class="group-form">
                     <label for="avaliacao" class="rating-label">Deixe aqui sua avaliação</label>
                     <fieldset class="rating">
-                        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
-                        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
-                        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
-                        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
-                        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                        <input type="radio" id="star1" name="rating" value="1"><label
+                            for="star1"></label>
+                        <input type="radio" id="star2" name="rating" value="2"><label
+                            for="star2"></label>
+                        <input type="radio" id="star3" name="rating" value="3"><label
+                            for="star3"></label>
+                        <input type="radio" id="star4" name="rating" value="4"><label
+                            for="star4"></label>
+                        <input type="radio" id="star5" name="rating" value="5"><label
+                            for="star5"></label>
                     </fieldset>
                 </div>
                 <button type="submit">Enviar</button>

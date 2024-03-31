@@ -1,23 +1,23 @@
 /*aqui fica a parte do codigo do navigation*/
 
-.navigation{
+.navigation {
     width: auto;
     height: 100vh;
     background: #1D1840;
-    background-image:linear-gradient(to top, rgba(4, 20, 102, 0.52), rgba(14, 11, 13, 0.73)),
-    url('../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
+    background-image: linear-gradient(to top, rgba(4, 20, 102, 0.52), rgba(14, 11, 13, 0.73)),
+        url('../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 
-nav{
-width: 100%;
-float: left;
+nav {
+    width: 100%;
+    float: left;
 }
 
-.navigation-header{
+.navigation-header {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -26,11 +26,11 @@ float: left;
     border-bottom: 4px solid #5A7334;
 }
 
-.navigation-header li{
+.navigation-header li {
     display: inline;
 }
 
-.navigation-header li a{
+.navigation-header li a {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
@@ -38,7 +38,7 @@ float: left;
 
 }
 
-.navigation-header li a:hover{
+.navigation-header li a:hover {
     background-color: #0d0d0d;
     font-size: 15px;
     text-decoration: none;
@@ -47,7 +47,7 @@ float: left;
 
 
 /* Aqui fica a parte das informa��es social */
-.social{
+.social {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -55,18 +55,18 @@ float: left;
     padding: 10px;
 }
 
-.social-content{
+.social-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.social-content a{
+.social-content a {
     text-decoration: none;
     border: none;
 }
 
-.social-content .fa{
+.social-content .fa {
     font-size: 8rem;
     height: auto;
     color: #5A7334;
@@ -75,25 +75,25 @@ float: left;
 
 }
 
-.social-content .tittle{
+.social-content>.tittle {
     color: #DFEBF2;
     font-weight: 700;
     font-size: 22px;
 
 }
 
-.social-content .subtittle{
-color: #DFEBF2;
-font-weight: 400;
-font-size: 18px;
-margin-top: 10px;
-width: 310px;
-text-align: center;
+.social-content .subtittle {
+    color: #DFEBF2;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 310px;
+    text-align: center;
 }
 
 /* PARTE DO SOBRE MIM */
 
-.about-me{
+.about-me {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,7 +104,7 @@ text-align: center;
 
 
 
-.about-me .content{
+.about-me .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +114,7 @@ text-align: center;
 }
 
 
-.about-me .content .tittle{
+.about-me .content>.tittle {
     line-break: anywhere;
     color: #DFEBF2;
     font-weight: 700;
@@ -123,7 +123,7 @@ text-align: center;
     line-height: 1.5;
 }
 
-.about-me .content .subtittle{
+.about-me .content .subtittle {
     width: 700px;
     font-weight: 200;
     color: #DFEBF2;
@@ -133,7 +133,7 @@ text-align: center;
 }
 
 /* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMA��O ---------------------- */
-.tecnologias{
+.tecnologias {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -145,31 +145,31 @@ text-align: center;
     padding: 0;
 }
 
-.tecnologias__header{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 10px;
-padding: 10px 0;
+.tecnologias__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0;
 }
 
-.tecnologias__header .tittle{ 
+.tecnologias__header>.tittle {
     color: #fff;
     font-family: 700;
     font-size: 40px;
     font-weight: 700;
 }
 
-.tecnologias__header .subtittle{
+.tecnologias__header .subtittle {
     color: #fff;
-    padding:12px 0;
+    padding: 12px 0;
     font-size: 18px;
     width: 500px;
     text-align: center;
 }
 
 
-.tecnologias__content{
+.tecnologias__content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -182,7 +182,7 @@ padding: 10px 0;
 
 }
 
-.display{
+.display {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -192,12 +192,15 @@ padding: 10px 0;
     height: 500px;
 }
 
-.one, .two, .three , .for {
+.tecnologias__content>.one,
+.tecnologias__content>.two,
+.tecnologias__content>.three,
+.tecnologias__content>.for {
     border-right: 1px solid black;
 
 }
 
-.display .fa{
+.display .fa {
     font-size: 5rem;
     height: auto;
     color: #5A7334;
@@ -205,14 +208,14 @@ padding: 10px 0;
 }
 
 
-.display .tittle{
+.display>.tittle {
     text-align: center;
     font-weight: 700;
     color: #0d0d0d;
     font-size: 28px;
 }
 
-.display .subtittle{
+.display .subtittle {
     text-align: center;
     padding: 5px 0;
     font-size: 16px;
@@ -221,20 +224,39 @@ padding: 10px 0;
 }
 
 /* AQUI FICA A PARTE DE PROJETOS */
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5rem 0;
 }
 
-.projects__header{
+
+
+.projects__header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 18px 0;
 
 }
+
+.projects__header>.tittle {
+    color: #0d0d0d;
+    font-family: 700;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.projects__header .subtittle {
+    color: #0d0d0d;
+    padding: 12px 0;
+    font-size: 18px;
+    width: 500px;
+    text-align: center;
+}
+
+
 
 .projects__content {
     display: grid;
@@ -246,64 +268,108 @@ padding: 10px 0;
 }
 
 .project {
-    width: 300px;
-    height: 160px;
+    width: 380px;
+    height: 220px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     background-color: #1D1840;
 
 }
 
+.projects__content>.one {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 0.52), rgba(0, 0, 0, 0.73)), url(../images/project_1.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+
+.projects__content>.two {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 0.52), rgba(0, 0, 0, 0.73)), url(../images/project_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects__content>.three {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 0.52), rgba(0, 0, 0, 0.73)), url(../images/project_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects__content>.for {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 0.52), rgba(0, 0, 0, 0.73)), url(../images/project_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.projects__content>.five {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 0.52), rgba(0, 0, 0, 0.73)), url(../images/project_5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects__content>.six {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 0.52), rgba(0, 0, 0, 0.73)), url(../images/project_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 .project>.tittle {
-    font-size: 22px;
-    color: #fff;
-    font-weight: 700;
-    padding: 10px;
+    font-size: 26px;
+    color: #DFEBF2;
+    font-weight: 900;
+    padding: 35px 0;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #5A7334;
-    border-radius: 5px ;
-    border-color: #5A7334;
+    padding: 10px 10px;
+    background-color: #5a7334c9;
+    color: #DFEBF2;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: #DFEBF2;
     cursor: pointer;
+    width: 310px;
+    margin: 0 auto;
 }
 
-button:hover {
+/* button:hover {
     background-color: #0056b3;
-}
+} */
 
 
 /* AQUI FICA A PARTE DA LINHA DO TEMPO E O ACESSE MEU CURRICULO */
 
-.storyline{
+.storyline {
     height: 60vh;
-    background-color: #5A7334;
-    opacity: 0.8;
+    background-color: #5a7334cb;
     margin-top: 5rem;
     border-radius: 12px;
 }
 
-.storyline__header{
+.storyline__header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.storyline__header>.tittle{
-    width: 300px;
-    font-size: 28px;
+.storyline__header>.tittle {
+    width: 400px;
+    font-size: 32px;
     color: #0d0d0d;
-    font-weight: 700;
+    font-weight: 900;
+    padding: 35px 0;
+    line-height: 1.5;
 }
 
-.storyline__curriculo{
+.storyline__curriculo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -312,9 +378,20 @@ button:hover {
 
 }
 
-.storyline__curriculo>a{
+.storyline__curriculo>.tittle {
+    width: 500px;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #DFEBF2;
+    padding: 10px 0;
+    line-break: auto;
+}
+
+.storyline__curriculo>a {
     width: 250px;
     background-color: #1D1840;
+    border: 1px solid #DFEBF2;
     border-radius: 15px;
     margin: 1rem 0;
     padding: 15px;
@@ -343,11 +420,11 @@ button:hover {
 
 .experiencia::before {
     content: '';
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background-color: #fff;
-    border: 2px solid #000;
+    background-color: #DFEBF2;
+    border: 1px solid #0d0d0d;
 }
 
 .experiencia>.subtittle {
@@ -357,21 +434,21 @@ button:hover {
     color: #fff;
 }
 
-.experiencia> .descricao {
-text-align: center;
+.experiencia>.descricao {
+    text-align: center;
 }
 
 
 
 /* AQUI FICA A PARTE DE FEEDBACKS DOS CLIENTES */
-.feedbacks{
+.feedbacks {
     background-color: #F5F5F5;
     height: 60vh;
     border-radius: 12px;
 }
 
 
-.feedbacks__header{
+.feedbacks__header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -379,13 +456,13 @@ text-align: center;
     padding: 4rem 0;
 }
 
-.feedbacks__header>.tittle{
+.feedbacks__header>.tittle {
     font-size: 22px;
     font-weight: 700;
     padding: 1rem 0;
 }
 
-.feedbacks__header>.subtittle{
+.feedbacks__header>.subtittle {
     width: 520px;
     font-size: 18px;
     text-align: center;
@@ -393,18 +470,17 @@ text-align: center;
 
 /* AQUI FICA A PARTE DO FORMULARIO DE ENTRE EM CONTATO */
 
-.contact{
-  
-        width: 80%; /* Definindo uma largura m�xima para a se��o */
-        max-width: 920px;
-        height: 60vh; /* Definindo uma altura fixa para a se��o */
-        margin: 5rem auto; /* Centralizando horizontalmente */
-        background-color: #5A7334; /* Apenas para visualiza��o, pode ser removido */
-        opacity: 0.8;
-        border-radius: 12px;
+.contact {
+
+    width: 80%;
+    max-width: 920px;
+    height: 60vh;
+    margin: 5rem auto;
+    background-color: #5a7334cb;
+    border-radius: 12px;
 }
 
-.contact__header{
+.contact__header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -413,14 +489,14 @@ text-align: center;
     text-align: center;
 }
 
-.contact__header>.tittle{
+.contact__header>.tittle {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
     padding: 12px 0;
 }
 
-.contact__header>.subtittle{
+.contact__header>.subtittle {
     width: 520px;
     font-weight: 200;
     color: #fff;
@@ -429,7 +505,7 @@ text-align: center;
 }
 
 
-.contact__form{
+.contact__form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -438,7 +514,8 @@ text-align: center;
 
 .group-form {
     display: flex;
-    flex-direction: row; /* Altera��o para alinhar os inputs lado a lado */
+    flex-direction: row;
+    /* Altera��o para alinhar os inputs lado a lado */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -449,9 +526,11 @@ text-align: center;
 .group-form textarea,
 .group-form fieldset {
     border: 1px solid #ccc;
-    flex: 1; /* Adicionado para que os inputs ocupem todo o espa�o dispon�vel */
+    flex: 1;
+    /* Adicionado para que os inputs ocupem todo o espa�o dispon�vel */
     width: 280px;
-    margin-right: 10px; /* Espa�amento entre os inputs */
+    margin-right: 10px;
+    /* Espa�amento entre os inputs */
     padding: 12px;
     border-radius: 8px;
     box-sizing: border-box;
@@ -483,14 +562,14 @@ text-align: center;
 .rating label {
     font-size: 25px;
     color: #ddd;
-    margin-right: 5px; /* Reduzi a margem para evitar o corte */
+    margin-right: 5px;
 }
 
 .rating label:before {
     content: "\2605";
 }
 
-.rating input:checked ~ label {
+.rating input:checked~label {
     color: rgb(78, 54, 19);
 }
 
@@ -512,11 +591,15 @@ button[type="submit"]:hover {
 /* AQUI FICA A PARTE DO FOOTER */
 footer {
     display: flex;
-    justify-content: space-around; /* Coloca o conte�do dos filhos no in�cio e no final do elemento pai */
-    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-around;
+    /* Coloca o conte�do dos filhos no in�cio e no final do elemento pai */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
     padding: 20px;
-    background-color: #292526; /* Apenas para visualiza��o */
-    color: #fff; /* Apenas para visualiza��o */
+    background-color: #292526;
+    /* Apenas para visualiza��o */
+    color: #fff;
+    /* Apenas para visualiza��o */
     border-radius: 8px;
     height: 30vh;
 }
@@ -526,23 +609,22 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     height: 260px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
-.tittle{
-    font-size: 30px;
-    font-weight: 600;
-}
+
 
 .footer__contacts {
     display: flex;
     flex-direction: row;
-    gap: 5px; /* Espa�amento entre os elementos */
+    gap: 5px;
+    /* Espa�amento entre os elementos */
 }
 
 .footer__contacts {
     display: flex;
-    gap: 10px; /* Espa�amento entre os elementos */
+    gap: 10px;
+    /* Espa�amento entre os elementos */
 }
 
 .footer__contacts li {
@@ -550,12 +632,12 @@ footer {
     align-items: center;
 }
 
-.footer__contacts .fa{
+.footer__contacts .fa {
     font-size: 28px;
     height: auto;
     color: #5A7334;
     margin: 0 8px;
-    
+
 }
 
 .footer__contacts li span {
@@ -566,10 +648,11 @@ footer {
 .footer__menu {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espa�amento entre os elementos */
+    gap: 10px;
+    /* Espa�amento entre os elementos */
 }
 
-.footer__content>a{
+.footer__content>a {
     width: 200px;
     text-decoration: none;
     background-color: #5A7334;
@@ -580,16 +663,11 @@ footer {
     font-size: 14px;
 }
 
-.footer__menu>a{
+.footer__menu>a {
     text-decoration: none;
     color: #F5F5F5;
     font-size: 16px;
     font-weight: 700;
     text-align: right;
     padding: 10px 0;
-}
-
-.tittle {
-    font-weight: bold;
-    margin-bottom: 10px; /* Adiciona espa�o abaixo do t�tulo */
 }
