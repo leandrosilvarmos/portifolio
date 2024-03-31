@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/portifolio', function () {
     return view('portifolio');
 });
+
+
+Route::post('/feedback' , 'App\Http\Controllers\FeedbackController@CreateFeedback')->name('feedback');

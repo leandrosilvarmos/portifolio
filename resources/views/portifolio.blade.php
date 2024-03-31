@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title></title>
 </head>
 
@@ -184,36 +185,62 @@
 
         <div class="storyline__content">
             <div class="experiencia">
-                <span class="subtittle"> 1. Experiencia</span>
-                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
-                    delectus debitis cupiditate itaque.</span>
+                <span class="tittle"> Fevereiro / 2019</span>
+                <span class="subtittle">Desenvolvedor FrontEnd - JR</span>
+                <span class="descricao">Minha primeira experiencia profissional
+                    onde adquiri conhecimentos em atendimento de primeiro nivél, documentação de novos projetos e
+                    solução de problemas em ambinete real.</span>
+                </span>
             </div>
             <div class="experiencia">
-                <span class="subtittle"> 2. Experiencia</span>
-                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
-                    delectus debitis cupiditate itaque.</span>
+                <span class="tittle"> Setembro / 2019</span>
+                <span class="subtittle">Assistente de TI - PL </span>
+                <span class="descricao"> Nessa nova oportunidade consegui agregar meus conhecimentos anteriores, e
+                    trazer para a empresa
+                    novas tecnologias, sistemas integrados e adequação das regras de negocios existentes. </span>
             </div>
             <div class="experiencia">
-                <span class="subtittle"> 3. Experiencia</span>
-                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
-                    delectus debitis cupiditate itaque.</span>
+                <span class="tittle"> Fevereiro / 2022 </span>
+                <span class="subtittle">Analista de Sistemas e Lider de Equipe - JR</span>
+                <span class="descricao">Ainda na mesma empresa recebi uma promoção, ficando a partir desse momento
+                    résponsavel por trazer
+                    novos parceiros de tecnologia pra empresa, desenvolver novos projetos e recutrar novos
+                    profissionais para o meu departamento.</span>
             </div>
             <div class="experiencia">
-                <span class="subtittle"> 4. Experiencia</span>
-                <span class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat laboriosam
-                    delectus debitis cupiditate itaque.</span>
+                <span class="tittle"> Julho / 2023 </span>
+                <span class="subtittle"> Analista de Sistemas - JR </span>
+                <span class="descricao"> Nessa nova empresa a qual estou atualmente responsavél por realizar
+                    manutenção de rotina e desenvolver novos projetos para a intranet corporativa.
+                    Além de realizar suporte ao sistema de cadastro de pacintes, prontuario médico e banco de dados.
+                </span>
             </div>
         </div>
     </section>
 
     <section class="feedbacks">
         <div class="feedbacks__header">
-            <span class="tittle">Confira alguns feedbacks de clientes e empresas que ja passei</span>
-            <span class="subtittle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum est vel repellat
-                sint vitae qui quia omnis culpa sequi. amet consectetur adipisicing elit. Harum est vel repellat
-                sint vitae qui quia omnis culpa sequi</span>
+            <span class="tittle">Feedbacks de clientes e empresas!</span>
+            <span class="subtittle">Aqui esta alguns cometarios deixados por clientes que atendi e empresas por onde
+                passei, confira e se poder deixe o seu comentario sobre a minha página e meus serviços logo
+                abaixo.</span>
         </div>
         <div class="feedbacks__content">
+
+            <div class="comments">
+                <div class="comments__return">
+                    <span class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis. Porro, voluptatibus
+                        beatae
+                        omnis corrupti fugiat eveniet officiis sapiente quia, laboriosam accusamus, repellendus harum
+                        error
+                        quos? Sunt asperiores soluta id.
+                    </span>
+                </div>
+
+                <span class="name_client">Aqui fica o nome do cliente</span>
+                <span class="avaliable">Aqui fica a nota do cliente </span>
+            </div>
 
         </div>
     </section>
@@ -226,18 +253,19 @@
         </div>
 
         <div class="contact__form">
-            <form action="#">
+            <form action="{{route('feedback')}}" method="POST">
+                @csrf
                 <div class="input-group">
                     <div class="group-form">
                         <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
-                        <input type="text" name="empresa_cliente" id="empresa_cliente"
+                        <input type="text" name="identidade" id="identidade"
                             placeholder="Nome da sua empresa ou seu nome completo">
                     </div>
                 </div>
                 <div class="group-form">
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+                    <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Digite sua mensagem aqui"></textarea>
                 </div>
-                <div class="group-form">
+                {{-- <div class="group-form">
                     <label for="avaliacao" class="rating-label">Deixe aqui sua avaliação</label>
                     <fieldset class="rating">
                         <input type="radio" id="star1" name="rating" value="1"><label
@@ -251,7 +279,7 @@
                         <input type="radio" id="star5" name="rating" value="5"><label
                             for="star5"></label>
                     </fieldset>
-                </div>
+                </div> --}}
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -270,11 +298,14 @@
                     <span>leandro.ramos.silva@gmail.com</span>
                 </li>
                 <li>
-                    <img src="" alt="" class="fa fa-brands fa-linkedin-in">
-                    <span>linkedin.com/leandro-silva</span>
+                    <a href="https://www.linkedin.com/in/leandro-ramos-silva/">
+                        <img src="" alt="" class="fa fa-brands fa-linkedin-in">
+                        <span>linkedin.com/leandro-silva</span>
+                    </a>
+             
                 </li>
             </div>
-            <a href="#">Entre em contato e saiba mais!</a>
+            <a href="https://wa.me/5511952373595">Entre em contato e saiba mais!</a>
         </div>
 
         <div class="footer__menu">
