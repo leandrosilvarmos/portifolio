@@ -22,4 +22,10 @@ class FeedbackController extends Controller
         return redirect()->back()->with('success', 'Feedback enviado com sucesso!');
     
     }
+
+    public function index()
+    {
+        $feedbacks = Feedback::all();
+        return view('portifolio')->with('feedbacks', Feedback::all());
+    }
 }

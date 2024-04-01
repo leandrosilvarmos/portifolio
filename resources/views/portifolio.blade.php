@@ -228,19 +228,19 @@
         <div class="feedbacks__content">
 
             <div class="comments">
-                <div class="comments__return">
-                    <span class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis. Porro, voluptatibus
-                        beatae
-                        omnis corrupti fugiat eveniet officiis sapiente quia, laboriosam accusamus, repellendus harum
-                        error
-                        quos? Sunt asperiores soluta id.
-                    </span>
-                </div>
+                @foreach ($feedbacks as $feedback)
+                    <div class="comments__return">
+                        <span class="text">
+                            {{ $feedback->feedback }}
+                        </span>
+                    </div>
 
-                <span class="name_client">Aqui fica o nome do cliente</span>
-                <span class="avaliable">Aqui fica a nota do cliente </span>
+                    <span class="name_client">{{ $feedback->nome }} - {{ $feedback->identidade }}</span>
+                    <span class="avaliable">Aqui fica a nota do cliente </span>
+                @endforeach
             </div>
+
+
 
         </div>
     </section>
@@ -253,7 +253,7 @@
         </div>
 
         <div class="contact__form">
-            <form action="{{route('feedback')}}" method="POST">
+            <form action="{{ route('feedback') }}" method="POST">
                 @csrf
                 <div class="input-group">
                     <div class="group-form">
@@ -302,7 +302,7 @@
                         <img src="" alt="" class="fa fa-brands fa-linkedin-in">
                         <span>linkedin.com/leandro-silva</span>
                     </a>
-             
+
                 </li>
             </div>
             <a href="https://wa.me/5511952373595">Entre em contato e saiba mais!</a>

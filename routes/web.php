@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/portifolio', function () {
     return view('portifolio');
 });
 
 
+
+
+
 Route::post('/feedback' , 'App\Http\Controllers\FeedbackController@CreateFeedback')->name('feedback');
+Route::get('/portifolio', 'App\Http\Controllers\FeedbackController@index')->name('feedbacks.index');
