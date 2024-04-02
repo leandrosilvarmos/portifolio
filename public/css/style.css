@@ -1,5 +1,4 @@
 /*aqui fica a parte do codigo do navigation*/
-
 .navigation {
     width: auto;
     height: 100vh;
@@ -46,7 +45,7 @@ nav {
 }
 
 
-/* Aqui fica a parte das informa��es social */
+/* Aqui fica a parte das informaï¿½ï¿½es social */
 .social {
     display: flex;
     flex-direction: row;
@@ -132,7 +131,7 @@ nav {
     text-align: justify;
 }
 
-/* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMA��O ---------------------- */
+/* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMAï¿½ï¿½O ---------------------- */
 .tecnologias {
     height: 90vh;
     display: flex;
@@ -483,33 +482,73 @@ button {
 }
 
 .feedbacks__content{
+    width: 600px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.comments{
-    width: 680px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    height: auto;
     border-radius: 12px;
     border: 1px solid #5A7334;
     padding: 1rem 2rem;
+    margin: 0 auto;
 }
 
-.comments__return{
-    padding: 1rem 0;
+.comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente os feedbacks */
+    overflow: hidden;
+
+
 }
-.comments__return::before {
-    content: "\2018\2018"; /* Código do ícone de aspas invertidas da FontAwesome */
-    display: inline-block;
-    font-family: "Font Awesome 6 Free"; /* Nome da fonte da FontAwesome */
-    font-size: 60px; /* Ajuste o tamanho do ícone conforme necessário */
-    color: #0d0d0d; /* Cor do ícone */
+
+.comments__return {
+    word-wrap: break-word; /* Faz com que o texto quebre em linhas */
+    display: none; /* Inicialmente, todos os elementos estão ocultos */
+    justify-content: space-around;
+    align-items: flex-start;
+    transition: opacity 0.5s ease-in-out; /* Adiciona transição de opacidade */
+}
+
+.comments__return>span{
+    width: 570px;
+    color: #0d0d0d;
+    padding: 16px;
+}
+
+.comments__return .descricao{
+    line-height: 1.2;
+    line-break: anywhere;
+    font-size: 18px;
+}
+
+.comments__return .legenda{
     font-weight: 700;
+    font-size: 16px;
+}
+
+.comments__return.active {
+    display: flex; 
+    flex-direction: column;/* Exibe apenas o elemento ativo */
+}
+
+.comments__return.fadeOut {
+    opacity: 0; /* Faz o elemento atual desaparecer */
+}
+
+.comments__return.fadeIn {
+    opacity: 1; /* Faz o próximo elemento aparecer */
+}
+
+
+.comments__return::before {
+    content: "\2018\2018"; /* CÃ³digo do Ã­cone de aspas invertidas da FontAwesome */
+    display: inline-block;
+    font-size: 60px; /* Ajuste o tamanho do Ã­cone conforme necessÃ¡rio */
+    color: #5A7334; /* Cor do Ã­cone */
+    font-weight: 700;
+    width: 50px;
+    height: 30px;
 }
 
 
@@ -697,7 +736,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Espa�amento entre os elementos */
+    /* Espaï¿½amento entre os elementos */
 }
 
 .footer__content>a {
@@ -719,4 +758,61 @@ footer {
     font-weight: 700;
     text-align: right;
     padding: 10px 0;
+}  display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.footer__content>a{
+    width: 200px;
+    text-decoration: none;
+    background-color: #5A7334;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #F5F5F5;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer__menu>a{
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+ display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.footer__content>a{
+    width: 200px;
+    text-decoration: none;
+    background-color: #5A7334;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #F5F5F5;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer__menu>a{
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
 }

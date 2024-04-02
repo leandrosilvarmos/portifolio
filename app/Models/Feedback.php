@@ -10,6 +10,6 @@ class Feedback extends Model
     use HasFactory;
 
     protected $fillable = [
-        'nome' , 'identidade' , 'feedback'
+        'nome' , 'identidade' , 'feedback' , 'nota'
     ];
 }

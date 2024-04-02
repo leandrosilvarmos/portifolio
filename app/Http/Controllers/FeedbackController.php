@@ -11,11 +11,12 @@ class FeedbackController extends Controller
 
     public function createFeedback(Request $request) // Corrigido para usar Request como parÃ¢metro
     {
-        Feedback::create([
-            'nome' => $request->nome , 
-            'identidade' => $request->identidade , 
-            'feedback' => $request->feedback , 
-        ]);
+        $feedback = new Feedback();
+        $feedback->nome = $request->nome;
+        $feedback->identidade = $request->identidade;
+        $feedback->feedback = $request->feedback;
+        $feedback->nota = $request->nota; // Adicione essa linha para incluir a avaliação selecionada
+        $feedback->save();
 
 
         // Redirecionar para uma rota ou retornar uma resposta adequada

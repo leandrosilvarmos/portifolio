@@ -226,23 +226,24 @@
                 abaixo.</span>
         </div>
         <div class="feedbacks__content">
-
             <div class="comments">
-                @foreach ($feedbacks as $feedback)
-                    <div class="comments__return">
-                        <span class="text">
-                            {{ $feedback->feedback }}
-                        </span>
-                    </div>
+                <div class="comments__container">
+                    @foreach ($feedbacks as $feedback)
+                        <div class="comments__return">
+                            <span class="descricao">{{ $feedback->feedback }}</span>
+                            <span class="legenda">{{ $feedback->nome }} - {{ $feedback->identidade }}</span>
+                        </div>
 
-                    <span class="name_client">{{ $feedback->nome }} - {{ $feedback->identidade }}</span>
-                    <span class="avaliable">Aqui fica a nota do cliente </span>
-                @endforeach
+                        <div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
-
-
-
         </div>
+
+
+
+
     </section>
 
     <section class="contact">
@@ -265,21 +266,17 @@
                 <div class="group-form">
                     <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Digite sua mensagem aqui"></textarea>
                 </div>
-                {{-- <div class="group-form">
+                <div class="group-form">
                     <label for="avaliacao" class="rating-label">Deixe aqui sua avaliação</label>
                     <fieldset class="rating">
-                        <input type="radio" id="star1" name="rating" value="1"><label
-                            for="star1"></label>
-                        <input type="radio" id="star2" name="rating" value="2"><label
-                            for="star2"></label>
-                        <input type="radio" id="star3" name="rating" value="3"><label
-                            for="star3"></label>
-                        <input type="radio" id="star4" name="rating" value="4"><label
-                            for="star4"></label>
-                        <input type="radio" id="star5" name="rating" value="5"><label
-                            for="star5"></label>
+                        <input type="radio" id="star1" name="nota" value="1"><label for="star1"></label>
+                        <input type="radio" id="star2" name="nota" value="2"><label for="star2"></label>
+                        <input type="radio" id="star3" name="nota" value="3"><label for="star3"></label>
+                        <input type="radio" id="star4" name="nota" value="4"><label for="star4"></label>
+                        <input type="radio" id="star5" name="nota" value="5"><label for="star5"></label>
                     </fieldset>
-                </div> --}}
+                </div>
+                
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -320,6 +317,56 @@
 
     </footer>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const feedbacks = document.querySelectorAll('.comments__return');
+            let index = 0; // Índice do feedback atual
+
+            // Função para fazer a transição para o próximo feedback
+            function nextFeedback() {
+                const currentFeedback = feedbacks[index];
+                const nextIndex = (index + 1) % feedbacks.length;
+                const nextFeedback = feedbacks[nextIndex];
+
+                // Adiciona classe para animação de saída
+                currentFeedback.classList.add('fadeOut');
+
+                setTimeout(function() {
+                    // Remove a classe active do feedback atual
+                    currentFeedback.classList.remove('active', 'fadeOut');
+                    // Adiciona a classe active ao próximo feedback
+                    nextFeedback.classList.add('active');
+                    index = nextIndex; // Atualiza o índice do próximo feedback
+                }, 500); // Tempo da animação de saída
+
+                // Adiciona classe para animação de entrada
+                setTimeout(function() {
+                    nextFeedback.classList.add('fadeIn');
+                }, 550); // Tempo da animação de entrada
+            }
+
+            // Chamando a função para iniciar o carrossel automático
+            setInterval(nextFeedback, 6000); // Altere o tempo de rotação conforme necessário (3000 = 3 segundos)
+
+            // Exibir o primeiro feedback inicialmente
+            feedbacks[index].classList.add('active');
+        });
+
+        const stars = document.querySelectorAll('.rating input[type="radio"]');
+        const labels = document.querySelectorAll('.rating label');
+
+        stars.forEach((star, index) => {
+            star.addEventListener('change', function() {
+                for (let i = 0; i <= index; i++) {
+                    labels[i].style.color = '#DFEBF2'; // Marca os labels até o index selecionado
+                }
+                for (let i = index + 1; i < labels.length; i++) {
+                    labels[i].style.color = '#292526'; // Desmarca os labels após o index selecionado
+                }
+            });
+        });
+    </script>
 
 </body>
 
