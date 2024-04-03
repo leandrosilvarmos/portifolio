@@ -7,9 +7,7 @@
         url('../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-
 
 nav {
     width: 100%;
@@ -34,7 +32,6 @@ nav {
     font-size: 14px;
     font-weight: 700;
     color: #DFEBF2;
-
 }
 
 .navigation-header li a:hover {
@@ -44,8 +41,7 @@ nav {
     font-weight: 700;
 }
 
-
-/* Aqui fica a parte das informaï¿½ï¿½es social */
+/* Aqui fica a parte das informações social */
 .social {
     display: flex;
     flex-direction: row;
@@ -71,14 +67,12 @@ nav {
     color: #5A7334;
     margin: 8px;
     padding: 12px;
-
 }
 
-.social-content>.tittle {
+.social-content > .tittle {
     color: #DFEBF2;
     font-weight: 700;
     font-size: 22px;
-
 }
 
 .social-content .subtittle {
@@ -101,8 +95,6 @@ nav {
     padding: 18px 80px;
 }
 
-
-
 .about-me .content {
     display: flex;
     flex-direction: column;
@@ -112,8 +104,7 @@ nav {
     padding: 0;
 }
 
-
-.about-me .content>.tittle {
+.about-me .content > .tittle {
     line-break: anywhere;
     color: #DFEBF2;
     font-weight: 700;
@@ -131,9 +122,52 @@ nav {
     text-align: justify;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .about-me .content {
+        width: 90%;
+        padding: 18px 20px;
+    }
+
+    .about-me .content > .tittle {
+        font-size: 28px;
+    }
+
+    .about-me .content .subtittle {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .navigation-header {
+        flex-wrap: wrap;
+    }
+
+    .navigation-header li {
+        flex: 1 0 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-me .content {
+        width: 90%;
+        padding: 18px 10px;
+    }
+
+    .about-me .content > .tittle {
+        font-size: 24px;
+    }
+
+    .about-me .content .subtittle {
+        font-size: 16px;
+    }
+}
+
+
 /* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMAï¿½ï¿½O ---------------------- */
 .tecnologias {
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +175,7 @@ nav {
     background-image: url(../images/wave.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0;
+    padding: 20px;
 }
 
 .tecnologias__header {
@@ -150,11 +184,11 @@ nav {
     align-items: center;
     margin-top: 10px;
     padding: 10px 0;
+    
 }
 
 .tecnologias__header>.tittle {
     color: #fff;
-    font-family: 700;
     font-size: 40px;
     font-weight: 700;
 }
@@ -174,9 +208,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: aqua;
-    width: 1250px;
+    width: 1320px;
     border-radius: 22px;
     margin: 22px 0;
+
 
 
 }
@@ -222,6 +257,41 @@ nav {
     font-style: italic;
 }
 
+@media only screen and (max-width: 768px) {
+    .tecnologias__content {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .display {
+        width: 90%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        border-bottom: none;
+    }
+
+    .tecnologias__header > .tittle {
+        font-size: 32px;
+    }
+
+    .tecnologias__header .subtittle {
+        font-size: 16px;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .display > .tittle {
+        font-size: 24px;
+    }
+
+    .display .subtittle {
+        font-size: 14px;
+    }
+}
 /* AQUI FICA A PARTE DE PROJETOS */
 .projects {
     display: flex;
