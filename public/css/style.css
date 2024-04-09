@@ -149,12 +149,13 @@ nav {
         position: fixed; /* Posição fixa para manter o menu na tela */
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
+        height: auto;
+        width: auto;
         background-color: #342f62; /* Cor de fundo mais clara */
-        padding: 0; /* Espaçamento interno do menu */
+        padding: 10px; /* Espaçamento interno do menu */
         margin: 0;
         box-sizing: border-box; /* Inclui o padding no tamanho total */
+        border: none;
     }
 
     .navigation-header.show-menu {
@@ -171,7 +172,7 @@ nav {
 
     .navigation-header li {
         margin-bottom: 10px; /* Espaçamento entre as opções */
-        padding: 10px;
+        padding: 1rem;
 
     }
 
@@ -187,10 +188,11 @@ nav {
         border-radius: 0px 0 50px 50px;
         padding: 20px;
         box-sizing: border-box;
+
     }
 
     .social-content {
-        margin-bottom: 20px;
+        margin: 20px;
     }
 
     .social-content a {

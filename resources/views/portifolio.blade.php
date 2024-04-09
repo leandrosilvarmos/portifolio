@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css">
-{{-- 
+    {{-- <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
+    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css"> --}}
+
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title></title>
@@ -379,13 +379,40 @@
 
 
         document.addEventListener("DOMContentLoaded", function() {
-            const toggleMenu = document.querySelector(".toggle-menu");
-            const navigationHeader = document.querySelector(".navigation-header");
+    const toggleMenu = document.querySelector(".toggle-menu");
+    const navigationHeader = document.querySelector(".navigation-header");
 
-            toggleMenu.addEventListener("click", function() {
-                navigationHeader.classList.toggle("show-menu");
-            });
+    // Adiciona um ouvinte de evento de clique no ícone de toggle
+    toggleMenu.addEventListener("click", function() {
+        navigationHeader.classList.toggle("show-menu");
+    });
+
+    // Adiciona um ouvinte de evento de clique no documento inteiro
+    document.addEventListener("click", function(event) {
+        // Verifica se o clique ocorreu dentro do menu de navegação ou no ícone de toggle
+        if (!navigationHeader.contains(event.target) && !toggleMenu.contains(event.target)) {
+            // Se o clique ocorreu fora do menu, fecha o menu
+            navigationHeader.classList.remove("show-menu");
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const socialContent = document.querySelectorAll(".social-content");
+    let currentIndex = 0;
+
+    function showContent(index) {
+        socialContent.forEach((content, i) => {
+            if (i === index) {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
         });
+    }
+
+
     </script>
 
 </body>
