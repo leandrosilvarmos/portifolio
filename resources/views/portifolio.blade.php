@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css">
+    {{-- <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
+    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css"> --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">  --}}
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title></title>
@@ -17,6 +17,7 @@
 
 <body>
     <div class="navigation">
+        <i class="fa-solid fa-bars toggle-menu"></i>
         <nav>
             <ul class="navigation-header">
                 <li><a href="#">APRESENTAÇÃO</a></li>
@@ -257,8 +258,8 @@
         </div>
 
         <div class="contact__form">
-            {{-- <form action="{{ route('feedback') }}" method="POST"> --}}
-                <form action="https://portifolio-93179d6d0b02.herokuapp.com/feedback" method="post">
+            <form action="{{ route('feedback') }}" method="POST">
+                {{-- <form action="https://portifolio-93179d6d0b02.herokuapp.com/feedback" method="post"> --}}
                 @csrf
                 <div class="input-group">
                     <div class="group-form">
@@ -273,14 +274,19 @@
                 <div class="group-form">
                     <label for="avaliacao" class="rating-label">Deixe aqui sua avaliação</label>
                     <fieldset class="rating">
-                        <input type="radio" id="star1" name="nota" value="1"><label for="star1"></label>
-                        <input type="radio" id="star2" name="nota" value="2"><label for="star2"></label>
-                        <input type="radio" id="star3" name="nota" value="3"><label for="star3"></label>
-                        <input type="radio" id="star4" name="nota" value="4"><label for="star4"></label>
-                        <input type="radio" id="star5" name="nota" value="5"><label for="star5"></label>
+                        <input type="radio" id="star1" name="nota" value="1"><label
+                            for="star1"></label>
+                        <input type="radio" id="star2" name="nota" value="2"><label
+                            for="star2"></label>
+                        <input type="radio" id="star3" name="nota" value="3"><label
+                            for="star3"></label>
+                        <input type="radio" id="star4" name="nota" value="4"><label
+                            for="star4"></label>
+                        <input type="radio" id="star5" name="nota" value="5"><label
+                            for="star5"></label>
                     </fieldset>
                 </div>
-                
+
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -368,6 +374,16 @@
                 for (let i = index + 1; i < labels.length; i++) {
                     labels[i].style.color = '#292526'; // Desmarca os labels após o index selecionado
                 }
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleMenu = document.querySelector(".toggle-menu");
+            const navigationHeader = document.querySelector(".navigation-header");
+
+            toggleMenu.addEventListener("click", function() {
+                navigationHeader.classList.toggle("show-menu");
             });
         });
     </script>

@@ -69,7 +69,7 @@ nav {
     padding: 12px;
 }
 
-.social-content > .tittle {
+.social-content>.tittle {
     color: #DFEBF2;
     font-weight: 700;
     font-size: 22px;
@@ -104,7 +104,7 @@ nav {
     padding: 0;
 }
 
-.about-me .content > .tittle {
+.about-me .content>.tittle {
     line-break: anywhere;
     color: #DFEBF2;
     font-weight: 700;
@@ -122,48 +122,105 @@ nav {
     text-align: justify;
 }
 
+.toggle-menu {
+    display: none; /* Oculta o �cone em telas maiores que 768px */
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-    .about-me .content {
-        width: 90%;
-        padding: 18px 20px;
+    .toggle-menu {
+        display: block;
+        color: #5A7334; /* Cor do �cone */
+        font-size: 28px; /* Tamanho do �cone */
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
     }
 
-    .about-me .content > .tittle {
-        font-size: 28px;
-    }
-
-    .about-me .content .subtittle {
-        width: 90%;
-        font-size: 18px;
+    .navigation {
+        position: relative;
+        padding-left: 40px; /* Espa�amento para o �cone de menu */
     }
 
     .navigation-header {
+        display: none;
         flex-wrap: wrap;
+        position: fixed; /* Posi��o fixa para manter o menu na tela */
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #342f62; /* Cor de fundo mais clara */
+        padding: 0; /* Espa�amento interno do menu */
+        margin: 0;
+        box-sizing: border-box; /* Inclui o padding no tamanho total */
+    }
+
+    .navigation-header.show-menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /* Para empilhar as op��es verticalmente */
+        align-items: flex-start; /* Alinha as op��es � esquerda */
+    }
+
+    .navigation-header ul {
+        list-style-type: none; /* Remove os estilos padr�o da lista */
+        padding: 0; /* Remove o padding padr�o da lista */
     }
 
     .navigation-header li {
-        flex: 1 0 100%;
-        text-align: center;
-        margin: 5px 0;
-    }
-}
+        margin-bottom: 10px; /* Espa�amento entre as op��es */
+        padding: 10px;
 
-@media only screen and (max-width: 480px) {
+    }
+
+    .navigation-header li a {
+        color: #ffffff; /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado dos links */
+        font-size: 16px; /* Tamanho do texto */
+    }
+
+    .social {
+        width: 100%;
+        background-color: #1D1840;
+        border-radius: 0px 0 50px 50px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .social-content {
+        margin-bottom: 20px;
+    }
+
+    .social-content a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .social-content img {
+        width: 24px;
+        margin-bottom: 10px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .about-me img {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
     .about-me .content {
-        width: 90%;
-        padding: 18px 10px;
-    }
-
-    .about-me .content > .tittle {
-        font-size: 24px;
-    }
-
-    .about-me .content .subtittle {
-        font-size: 16px;
+        text-align: center;
     }
 }
-
 
 /* ------------------ AQUI FICA A PARTE DA LINGUAGENS E PROGAMAï¿½ï¿½O ---------------------- */
 .tecnologias {
@@ -184,7 +241,7 @@ nav {
     align-items: center;
     margin-top: 10px;
     padding: 10px 0;
-    
+
 }
 
 .tecnologias__header>.tittle {
@@ -273,7 +330,7 @@ nav {
         border-bottom: none;
     }
 
-    .tecnologias__header > .tittle {
+    .tecnologias__header>.tittle {
         font-size: 32px;
     }
 
@@ -284,7 +341,7 @@ nav {
 }
 
 @media only screen and (max-width: 480px) {
-    .display > .tittle {
+    .display>.tittle {
         font-size: 24px;
     }
 
@@ -292,6 +349,7 @@ nav {
         font-size: 14px;
     }
 }
+
 /* AQUI FICA A PARTE DE PROJETOS */
 .projects {
     display: flex;
@@ -551,7 +609,7 @@ button {
     padding: 1rem 0;
 }
 
-.feedbacks__content{
+.feedbacks__content {
     width: 600px;
     height: auto;
     display: flex;
@@ -563,59 +621,69 @@ button {
     margin: 0 auto;
 }
 
-.comments{
+.comments {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente os feedbacks */
+    align-items: center;
+    /* Centraliza horizontalmente os feedbacks */
     overflow: hidden;
 
 
 }
 
 .comments__return {
-    word-wrap: break-word; /* Faz com que o texto quebre em linhas */
-    display: none; /* Inicialmente, todos os elementos estão ocultos */
+    word-wrap: break-word;
+    /* Faz com que o texto quebre em linhas */
+    display: none;
+    /* Inicialmente, todos os elementos estão ocultos */
     justify-content: space-around;
     align-items: flex-start;
-    transition: opacity 0.5s ease-in-out; /* Adiciona transição de opacidade */
+    transition: opacity 0.5s ease-in-out;
+    /* Adiciona transição de opacidade */
 }
 
-.comments__return>span{
+.comments__return>span {
     width: 570px;
     color: #0d0d0d;
     padding: 16px;
 }
 
-.comments__return .descricao{
+.comments__return .descricao {
     line-height: 1.2;
     line-break: anywhere;
     font-size: 18px;
 }
 
-.comments__return .legenda{
+.comments__return .legenda {
     font-weight: 700;
     font-size: 16px;
 }
 
 .comments__return.active {
-    display: flex; 
-    flex-direction: column;/* Exibe apenas o elemento ativo */
+    display: flex;
+    flex-direction: column;
+    /* Exibe apenas o elemento ativo */
 }
 
 .comments__return.fadeOut {
-    opacity: 0; /* Faz o elemento atual desaparecer */
+    opacity: 0;
+    /* Faz o elemento atual desaparecer */
 }
 
 .comments__return.fadeIn {
-    opacity: 1; /* Faz o próximo elemento aparecer */
+    opacity: 1;
+    /* Faz o próximo elemento aparecer */
 }
 
 
 .comments__return::before {
-    content: "\2018\2018"; /* CÃ³digo do Ã­cone de aspas invertidas da FontAwesome */
+    content: "\2018\2018";
+    /* CÃ³digo do Ã­cone de aspas invertidas da FontAwesome */
     display: inline-block;
-    font-size: 60px; /* Ajuste o tamanho do Ã­cone conforme necessÃ¡rio */
-    color: #5A7334; /* Cor do Ã­cone */
+    font-size: 60px;
+    /* Ajuste o tamanho do Ã­cone conforme necessÃ¡rio */
+    color: #5A7334;
+    /* Cor do Ã­cone */
     font-weight: 700;
     width: 50px;
     height: 30px;
@@ -648,7 +716,7 @@ button {
     padding: 12px 0;
     font-size: 40px;
     font-weight: 700;
-    width:600px;
+    width: 600px;
     text-align: center;
 }
 
@@ -762,12 +830,12 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer__content>.tittle{
+.footer__content>.tittle {
     color: #DFEBF2;
     padding: 12px 0;
     font-size: 32px;
     font-weight: 700;
-    width:600px;
+    width: 600px;
 }
 
 .footer__contacts {
@@ -781,7 +849,8 @@ footer {
     gap: 10px;
 }
 
-.footer__contacts li, a{
+.footer__contacts li,
+a {
     display: flex;
     align-items: center;
     color: #DFEBF2;
@@ -828,12 +897,15 @@ footer {
     font-weight: 700;
     text-align: right;
     padding: 10px 0;
-}  display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espaçamento entre os elementos */
 }
 
-.footer__content>a{
+display: flex;
+flex-direction: column;
+gap: 10px;
+/* Espaçamento entre os elementos */
+}
+
+.footer__content>a {
     width: 200px;
     text-decoration: none;
     background-color: #5A7334;
@@ -844,7 +916,7 @@ footer {
     font-size: 14px;
 }
 
-.footer__menu>a{
+.footer__menu>a {
     text-decoration: none;
     color: #F5F5F5;
     font-size: 16px;
@@ -855,14 +927,15 @@ footer {
 
 .title {
     font-weight: bold;
-    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
-}
- display: flex;
+    margin-bottom: 10px;
+    /* Adiciona espaço abaixo do título */
+    display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaçamento entre os elementos */
+    gap: 10px;
+    /* Espaçamento entre os elementos */
 }
 
-.footer__content>a{
+.footer__content>a {
     width: 200px;
     text-decoration: none;
     background-color: #5A7334;
@@ -873,7 +946,7 @@ footer {
     font-size: 14px;
 }
 
-.footer__menu>a{
+.footer__menu>a {
     text-decoration: none;
     color: #F5F5F5;
     font-size: 16px;
@@ -884,5 +957,6 @@ footer {
 
 .title {
     font-weight: bold;
-    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+    margin-bottom: 10px;
+    /* Adiciona espaço abaixo do título */
 }

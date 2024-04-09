@@ -55,11 +55,11 @@ $response = $kernel->handle(
 $kernel->terminate($request, $response);
 
 
-$basePath = dirname(__DIR__);
+// $basePath = dirname(__DIR__);
 
-// Define o caminho para o autoload do Composer
-require $basePath . '/vendor/autoload.php';
+// // Define o caminho para o autoload do Composer
+// require $basePath . '/vendor/autoload.php';
 
-$app = require_once $basePath . '/bootstrap/app.php';
+// $app = require_once $basePath . '/bootstrap/app.php';
 
-$app->run();
+// $app->run();
