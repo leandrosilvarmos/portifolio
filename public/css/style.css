@@ -18,7 +18,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    margin: 20px;
     padding: 10px 0;
     border-bottom: 4px solid #5A7334;
 }
@@ -69,7 +68,7 @@ nav {
     padding: 12px;
 }
 
-.social-content>.tittle {
+.social-content .tittle {
     color: #DFEBF2;
     font-weight: 700;
     font-size: 22px;
@@ -104,7 +103,7 @@ nav {
     padding: 0;
 }
 
-.about-me .content>.tittle {
+.about-me .content .tittle {
     line-break: anywhere;
     color: #DFEBF2;
     font-weight: 700;
@@ -123,15 +122,15 @@ nav {
 }
 
 .toggle-menu {
-    display: none; /* Oculta o ícone em telas maiores que 768px */
+    display: none;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     .toggle-menu {
         display: block;
-        color: #5A7334; /* Cor do ícone */
-        font-size: 28px; /* Tamanho do ícone */
+        color: #5A7334;
+        font-size: 28px;
         cursor: pointer;
         position: absolute;
         top: 10px;
@@ -139,88 +138,125 @@ nav {
     }
 
     .navigation {
+        height: auto;
         position: relative;
-        padding-left: 40px; /* Espaçamento para o ícone de menu */
+        border-radius: 0px 0 50px 50px;
+        box-sizing: border-box;
     }
 
     .navigation-header {
         display: none;
         flex-wrap: wrap;
-        position: fixed; /* Posição fixa para manter o menu na tela */
+        position: fixed;
         top: 0;
         left: 0;
         height: auto;
         width: auto;
-        background-color: #342f62; /* Cor de fundo mais clara */
-        padding: 10px; /* Espaçamento interno do menu */
+        background-color: #342f62;
+        padding: 10px;
         margin: 0;
-        box-sizing: border-box; /* Inclui o padding no tamanho total */
+        box-sizing: border-box;
         border: none;
     }
 
     .navigation-header.show-menu {
         display: flex;
         justify-content: center;
-        flex-direction: column; /* Para empilhar as opções verticalmente */
-        align-items: flex-start; /* Alinha as opções à esquerda */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .navigation-header ul {
-        list-style-type: none; /* Remove os estilos padrão da lista */
-        padding: 0; /* Remove o padding padrão da lista */
+        list-style-type: none;
+        padding: 0;
     }
 
     .navigation-header li {
-        margin-bottom: 10px; /* Espaçamento entre as opções */
+        margin-bottom: 10px;
         padding: 1rem;
 
     }
 
     .navigation-header li a {
-        color: #ffffff; /* Cor do texto */
-        text-decoration: none; /* Remove sublinhado dos links */
-        font-size: 16px; /* Tamanho do texto */
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
     }
 
     .social {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
         background-color: #1D1840;
         border-radius: 0px 0 50px 50px;
-        padding: 20px;
         box-sizing: border-box;
-
+        margin: 0;
+        padding: 0;
     }
 
+
     .social-content {
-        margin: 20px;
+        width: auto;
+        margin: 0;
+        padding: 10px 0;
     }
 
     .social-content a {
-        display: block;
-        color: #ffffff;
         text-decoration: none;
+        border: none;
     }
 
-    .social-content img {
-        width: 24px;
-        margin-bottom: 10px;
+    .social-content .fa {
+        font-size: 3rem;
+        height: auto;
+        color: #5A7334;
+        margin: 2px;
+    }
+
+
+    .social-content .subtittle {
+        margin-top: 8px;
     }
 
     .about-me {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-        box-sizing: border-box;
+        padding: 18px 20px;
+        /* Ajusta o preenchimento para telas menores */
     }
 
     .about-me img {
-        width: 180px;
-        margin-bottom: 10px;
+        width: 170px;
+        max-width: 200px;
     }
 
     .about-me .content {
+        width: auto;
+        /* Define a largura automaticamente para ocupar o máximo de espaço disponível */
         text-align: center;
+        /* Centraliza o conteúdo */
+        padding: 0;
+        align-items: center;
+    }
+
+    .about-me .content .tittle {
+        font-size: 22px;
+        /* Reduz o tamanho da fonte para telas menores */
+        margin: 10px 0;
+        /* Diminui a margem superior e inferior */
+        width: 300px;
+    }
+
+    .about-me .content .subtittle {
+        width: auto;
+        /* Define a largura automaticamente para ocupar o máximo de espaço disponível */
+        font-size: 18px;
+        /* Reduz o tamanho da fonte para telas menores */
+        text-align: justify;
+        /* Justifica o texto */
+        line-height: 1.4;
     }
 }
 
@@ -266,9 +302,8 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: aqua;
     width: 1320px;
-    border-radius: 22px;
+
     margin: 22px 0;
 
 
@@ -277,12 +312,14 @@ nav {
 
 .display {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 22px;
     width: 520px;
     height: 500px;
+    background-color: #DFEBF2;
+    border-radius: 22px;
 }
 
 .tecnologias__content>.one,
@@ -301,14 +338,14 @@ nav {
 }
 
 
-.display>.tittle {
+.text-content .tittle {
     text-align: center;
     font-weight: 700;
     color: #0d0d0d;
     font-size: 28px;
 }
 
-.display .subtittle {
+.text-content .subtittle {
     text-align: center;
     padding: 5px 0;
     font-size: 16px;
@@ -316,41 +353,91 @@ nav {
     font-style: italic;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 768px) {
+    .tecnologias {
+        background-image: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: none;
+    }
+
+
     .tecnologias__content {
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
         max-width: 100%;
-        padding: 10px;
+        margin: 0 auto;
     }
 
     .display {
-        width: 90%;
-        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        /* Tamanho médio do card */
+        height: 120px;
+        /* Altura fixa para todos os cards */
         margin-bottom: 20px;
-        border-bottom: none;
+        /* Espaçamento entre os cards */
+        padding: 10px;
+        background-color: #f0f0f0;
+        /* Cor de fundo do card */
+        border-radius: 5px;
+        /* Borda arredondada */
     }
 
-    .tecnologias__header>.tittle {
-        font-size: 32px;
+    .display__icons {
+        flex: 0 0 50px; /* Largura fixa para o ícone */
+        height: 100%; /* Ajusta a altura do ícone para corresponder à altura do card */
+        background-color: #1D1840; /* Cor de fundo do ícone */
+        display: flex; /* Ativa o modelo de layout flexbox */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        border-top-left-radius: 5px; /* Borda arredondada superior esquerda */
+        border-bottom-left-radius: 5px; /* Borda arredondada inferior esquerda */
+        padding: 10px; /* Espaçamento interno do ícone */
     }
 
-    .tecnologias__header .subtittle {
-        font-size: 16px;
-        max-width: none;
+    .display__icons .fa {
+        font-size: 40px;
+        height: auto;
+        text-align: center;
     }
+
+    .text-content {
+        flex-grow: 1; /* Ocupa todo o espaço restante */
+        height: auto; /* Ajusta a altura do texto para corresponder à altura do card */
+        text-align: justify; /* Justifica o texto */
+        padding-left: 20px; /* Espaçamento à esquerda do texto */
+        overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites da div */
+    }
+    
+    .text-content .tittle {
+        font-size: 18px;
+        font-weight: bold;
+        max-width: 70%; /* Define uma largura máxima para evitar que o título ultrapasse a div */
+    }
+    
+    .text-content .subtittle {
+        width: 350px;
+        height: 100%;
+        display: inline;
+        margin-top: 5px;
+        max-width: 70%; /* Define uma largura máxima para evitar que o subtítulo ultrapasse a div */
+        line-height: 1.1;
+
+    }
+
+
+
 }
 
-@media only screen and (max-width: 480px) {
-    .display>.tittle {
-        font-size: 24px;
-    }
 
-    .display .subtittle {
-        font-size: 14px;
-    }
-}
 
 /* AQUI FICA A PARTE DE PROJETOS */
 .projects {

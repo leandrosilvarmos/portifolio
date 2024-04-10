@@ -61,7 +61,7 @@
             <div class="about-me image"><img src="{{ asset('images/foto-perfil.png') }}" alt="imagem pessoal"></div>
             <div class="about-me content">
                 <spam class="tittle">Leandro Ramos Silva
-                    <p> Desenvolvedor Web Front e Back End</p>
+                    <p> Analista de sistemas</p>
                 </spam>
                 <spam class="subtittle">Profissional experiente há 5 anos como Analista de Sistemas, especializado em
                     CRM’s,
@@ -83,50 +83,74 @@
 
         <div class="tecnologias__content">
             <div class="display one">
-                <img src="" class="fa fa-brands fa-laravel alt="">
-                <span class=" tittle">Laravel</span>
-                <span class="subtittle"> - Criação de sistemas para empresas</span>
-                <span class="subtittle"> - Integração do seu site com outros sistemas ou aplicações já prontos</span>
-                <span class="subtittle"> - Manutenção de rotina em sistemas, e inclusão de novas funcionalidades ao seu
-                    criterio.</span>
+                <div class="display__icons"> <img src="" class="fa fa-brands fa-laravel alt=""></div>
+                <div class="text-content">
+
+                    <span class=" tittle">Laravel</span>
+                    <span class="subtittle"> - Criação de sistemas para empresas</span>
+                    <span class="subtittle"> - Integração do seu site com outros sistemas ou aplicações já
+                        prontos</span>
+                    <span class="subtittle"> - Manutenção de rotina em sistemas, e inclusão de novas funcionalidades ao
+                        seu
+                        criterio.</span>
+                </div>
             </div>
             <div class="display two">
-                <img src="" class="fa fa-brands fa-node-js" alt="">
-                <span class="tittle">Java Script</span>
-                <span class="subtittle"> - Aplicação de novas funcionalidades no seu site</span>
-                <span class="subtittle"> - Criação de novas regras e manutenção em possíveis erros do seu site</span>
-                <span class="subtittle"> - Adequação do visual da sua pagina, deixando ele mais atraente e mais
-                    personalizado.</span>
+
+                <div class="display__icons"><img src="" class="fa fa-brands fa-node-js" alt=""></div> 
+                <div class="text-content">
+
+                    <span class="tittle">Java Script</span>
+                    <span class="subtittle"> - Aplicação de novas funcionalidades no seu site</span>
+                    <span class="subtittle"> - Criação de novas regras e manutenção em possíveis erros do seu
+                        site</span>
+                    <span class="subtittle"> - Adequação do visual da sua pagina, deixando ele mais atraente e mais
+                        personalizado.</span>
+                </div>
             </div>
             <div class="display three">
-                <img src="" class="fa fa-solid fa-database" alt="">
-                <span class="tittle">MySql / Oracle</span>
-                <span class="subtittle"> - Gerenciamentos dos dados da sua aplicação e armazenamento com
-                    segurança</span>
-                <span class="subtittle"> - Análise e criação de novos relatórios com os dados presente em seu
-                    sistema</span>
-                <span class="subtittle"> - Manutenção de regras de négocio existentes e inclusão de novas conforme
-                    necessario.</span>
+
+               <div class="display__icons"><img src="" class="fa fa-solid fa-database" alt=""></div> 
+                <div class="text-content">
+
+                    <span class="tittle">MySql / Oracle</span>
+                    <span class="subtittle"> - Gerenciamentos dos dados da sua aplicação e armazenamento com
+                        segurança</span>
+                    <span class="subtittle"> - Análise e criação de novos relatórios com os dados presente em seu
+                        sistema</span>
+                    <span class="subtittle"> - Manutenção de regras de négocio existentes e inclusão de novas conforme
+                        necessario.</span>
+                </div>
             </div>
 
             <div class="display for">
-                <img src="" class="fa fa-solid fa-people-group" alt="">
-                <span class="tittle">Crm's</span>
-                <span class="subtittle"> - Atuação em Crm's para captura de novos leads e melhorar a qualificação dos
-                    mesmos</span>
-                <span class="subtittle"> - Análise e consultoria do seu négocios para melhorar as regras de négocio
-                    existentes </span>
-                <span class="subtittle"> - Atuação em novas campanhas de marketing nas redes socias para geração de
-                    leads.</span>
+
+                <div class="display__icons"><img src="" class="fa fa-solid fa-people-group" alt=""></div> 
+                <div class="text-content">
+
+                    <span class="tittle">Crm's</span>
+                    <span class="subtittle"> - Atuação em Crm's para captura de novos leads e melhorar a qualificação
+                        dos
+                        mesmos</span>
+                    <span class="subtittle"> - Análise e consultoria do seu négocios para melhorar as regras de négocio
+                        existentes </span>
+                    <span class="subtittle"> - Atuação em novas campanhas de marketing nas redes socias para geração de
+                        leads.</span>
+                </div>
             </div>
             <div class="display five">
-                <img src="" class="fa fa-brands fa-wordpress-simple" alt="">
-                <span class="tittle">Wordpress</span>
-                <span class="subtittle"> - Criação de Landing pages para sua loja, comercio ou produto</span>
-                <span class="subtittle"> - Criação de blogs individuais personalizados de acordo com a sua
-                    necessidade</span>
-                <span class="subtittle"> - Manutenção do seu site e integração do seu site com outras plataformas, como
-                    facebook e instagram. </span>
+
+                <div class="display__icons"><img src="" class="fa fa-brands fa-wordpress-simple" alt=""></div>
+                <div class="text-content">
+
+                    <span class="tittle">Wordpress</span>
+                    <span class="subtittle"> - Criação de Landing pages para sua loja, comercio ou produto</span>
+                    <span class="subtittle"> - Criação de blogs individuais personalizados de acordo com a sua
+                        necessidade</span>
+                    <span class="subtittle"> - Manutenção do seu site e integração do seu site com outras plataformas,
+                        como
+                        facebook e instagram. </span>
+                </div>
             </div>
         </div>
     </section>
@@ -379,40 +403,23 @@
 
 
         document.addEventListener("DOMContentLoaded", function() {
-    const toggleMenu = document.querySelector(".toggle-menu");
-    const navigationHeader = document.querySelector(".navigation-header");
+            const toggleMenu = document.querySelector(".toggle-menu");
+            const navigationHeader = document.querySelector(".navigation-header");
 
-    // Adiciona um ouvinte de evento de clique no ícone de toggle
-    toggleMenu.addEventListener("click", function() {
-        navigationHeader.classList.toggle("show-menu");
-    });
+            // Adiciona um ouvinte de evento de clique no ícone de toggle
+            toggleMenu.addEventListener("click", function() {
+                navigationHeader.classList.toggle("show-menu");
+            });
 
-    // Adiciona um ouvinte de evento de clique no documento inteiro
-    document.addEventListener("click", function(event) {
-        // Verifica se o clique ocorreu dentro do menu de navegação ou no ícone de toggle
-        if (!navigationHeader.contains(event.target) && !toggleMenu.contains(event.target)) {
-            // Se o clique ocorreu fora do menu, fecha o menu
-            navigationHeader.classList.remove("show-menu");
-        }
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const socialContent = document.querySelectorAll(".social-content");
-    let currentIndex = 0;
-
-    function showContent(index) {
-        socialContent.forEach((content, i) => {
-            if (i === index) {
-                content.style.display = "block";
-            } else {
-                content.style.display = "none";
-            }
+            // Adiciona um ouvinte de evento de clique no documento inteiro
+            document.addEventListener("click", function(event) {
+                // Verifica se o clique ocorreu dentro do menu de navegação ou no ícone de toggle
+                if (!navigationHeader.contains(event.target) && !toggleMenu.contains(event.target)) {
+                    // Se o clique ocorreu fora do menu, fecha o menu
+                    navigationHeader.classList.remove("show-menu");
+                }
+            });
         });
-    }
-
-
     </script>
 
 </body>
