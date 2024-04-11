@@ -357,12 +357,24 @@ nav {
 @media only screen and (max-width: 768px) {
     .tecnologias {
         background-image: none;
-        margin: 0;
+        margin: 2rem 0;
         padding: 0;
         border: none;
         background-color: none;
     }
 
+    .tecnologias__header .tittle {
+        color: #0d0d0d;
+        width: 90%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .tecnologias__header  .subtittle{
+        color: #0d0d0d;
+        width: 90%;   
+        text-align: center;
+     }
 
     .tecnologias__content {
         display: flex;
@@ -370,7 +382,7 @@ nav {
         align-items: center;
         width: 90%;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 
     .display {
@@ -555,9 +567,71 @@ button {
     margin: 0 auto;
 }
 
-/* button:hover {
-    background-color: #0056b3;
-} */
+@media only screen and (max-width: 768px) {
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(205, 217, 219, 0.411), rgba(191, 193, 196, 0.493)), url(../images/light-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px 10px 60px 5px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.projects__header{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.projects .tittle{
+    font-size: 22px;
+}
+.projects__header .subtittle {
+    width: 90%;
+}
+
+.projects__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Reduza o espaçamento entre os projetos para dispositivos móveis */
+    margin-top: 20px;
+}
+
+.project {
+      width: 90%; /* Ajuste a largura das divs de projeto para 50% da largura da tela */
+        height: 220px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: #1D1840;
+}
+
+.project>.tittle {
+    font-size: 26px;
+    color: #DFEBF2;
+    font-weight: 900;
+    padding: 10px 0; /* Reduza o espaçamento vertical */
+    flex-grow: 1;
+}
+
+button {
+    padding: 10px 20px; /* Ajuste o padding horizontal para o botão */
+    background-color: #5a7334c9;
+    color: #DFEBF2;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: #DFEBF2;
+    cursor: pointer;
+    width: 100%; /* Para preencher completamente a largura da div de projeto */
+    margin-top: 10px;
+}
+
+
+}
 
 
 /* AQUI FICA A PARTE DA LINHA DO TEMPO E O ACESSE MEU CURRICULO */

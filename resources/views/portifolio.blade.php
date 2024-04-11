@@ -97,7 +97,7 @@
             </div>
             <div class="display two">
 
-                <div class="display__icons"><img src="" class="fa fa-brands fa-node-js" alt=""></div> 
+                <div class="display__icons"><img src="" class="fa fa-brands fa-node-js" alt=""></div>
                 <div class="text-content">
 
                     <span class="tittle">Java Script</span>
@@ -110,7 +110,7 @@
             </div>
             <div class="display three">
 
-               <div class="display__icons"><img src="" class="fa fa-solid fa-database" alt=""></div> 
+                <div class="display__icons"><img src="" class="fa fa-solid fa-database" alt=""></div>
                 <div class="text-content">
 
                     <span class="tittle">MySql / Oracle</span>
@@ -125,7 +125,8 @@
 
             <div class="display for">
 
-                <div class="display__icons"><img src="" class="fa fa-solid fa-people-group" alt=""></div> 
+                <div class="display__icons"><img src="" class="fa fa-solid fa-people-group" alt="">
+                </div>
                 <div class="text-content">
 
                     <span class="tittle">Crm's</span>
@@ -140,7 +141,8 @@
             </div>
             <div class="display five">
 
-                <div class="display__icons"><img src="" class="fa fa-brands fa-wordpress-simple" alt=""></div>
+                <div class="display__icons"><img src="" class="fa fa-brands fa-wordpress-simple"
+                        alt=""></div>
                 <div class="text-content">
 
                     <span class="tittle">Wordpress</span>
@@ -163,7 +165,7 @@
         </div>
         <div class="projects__content">
             <div class="project one">
-                <spam class="tittle">DecFusion - Ecommerce</spam>
+                <spam class="tittle">DecFusion Ecommerce</spam>
                 <a href="https://github.com/leandrosilvarmos/decFusion"><button> Acesse para saber mais!</button></a>
 
             </div>
