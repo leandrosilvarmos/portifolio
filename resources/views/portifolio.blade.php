@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{-- <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css"> --}}
+    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
+    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css">
 
-    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title></title>
@@ -263,16 +263,10 @@
                             <span class="descricao">{{ $feedback->feedback }}</span>
                             <span class="legenda">{{ $feedback->nome }} - {{ $feedback->identidade }}</span>
                         </div>
-
-                        <div>
-                        </div>
                     @endforeach
                 </div>
             </div>
         </div>
-
-
-
 
     </section>
 
@@ -284,8 +278,8 @@
         </div>
 
         <div class="contact__form">
-            <form action="{{ route('feedback') }}" method="POST">
-                {{-- <form action="https://portifolio-93179d6d0b02.herokuapp.com/feedback" method="post"> --}}
+            {{-- <form action="{{ route('feedback') }}" method="POST"> --}}
+                <form action="https://portifolio-93179d6d0b02.herokuapp.com/feedback" method="post">
                 @csrf
                 <div class="input-group">
                     <div class="group-form">
