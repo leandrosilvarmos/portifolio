@@ -5,31 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css">
+    {{-- <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
+    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css"> --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <title>Portifolio</title>
 </head>
 
 <body>
+    
     <div class="navigation">
+        <div id="particles-js"></div>
         <i class="fa-solid fa-bars toggle-menu"></i>
-        <nav>
+        <nav id="menu">
             <ul class="navigation-header">
-                <li><a href="#">APRESENTAÇÃO</a></li>
-                <li><a href="#">TECNOLOGIAS</a></li>
-                <li><a href="#">PROJETOS</a></li>
-                <li><a href="#">EXPERIENCIAS</a></li>
-                <li><a href="#">FEEDBACKS</a></li>
+                <li><a href="#about-me">APRESENTAÇÃO</a></li>
+                <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                <li><a href="#projects">PROJETOS</a></li>
+                <li><a href="#storyline">EXPERIENCIAS</a></li>
+                <li><a href="#feedbacks">FEEDBACKS</a></li>
             </ul>
         </nav>
 
         <div class="social">
-            <div class="social-content">
+            <div class="social-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
                 <a href="https://github.com/leandrosilvarmos" class="social-content image">
                     <img src="" class="fa fa-brands fa-github" alt="">
                     <span class="tittle"> Projetos</span>
@@ -37,7 +41,7 @@
                     </spam>
                 </a>
             </div>
-            <div class="social-content">
+            <div class="social-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
                 <a href="" class="social-content image">
                     <img src="" class="fa fa-solid fa-comments-dollar" alt="">
                     <span class="tittle">Orçamentos</span>
@@ -46,7 +50,7 @@
                     </spam>
                 </a>
             </div>
-            <div class="social-content">
+            <div class="social-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
                 <a href="https://www.linkedin.com/in/leandro-ramos-silva/" class="social-content image">
                     <img src="" class="fa fa-brands fa-linkedin-in" alt="">
                     <span class="tittle">Rede de Contatos</span>
@@ -57,7 +61,7 @@
             </div>
         </div>
 
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="about-me image"><img src="{{ asset('images/foto-perfil.png') }}" alt="imagem pessoal"></div>
             <div class="about-me content">
                 <spam class="tittle">Leandro Ramos Silva
@@ -74,123 +78,97 @@
         </section>
     </div>
 
-    <section class="tecnologias">
+
+    
+    <section class="tecnologias" id="tecnologias">
         <div class="tecnologias__header">
             <spam class="tittle"> Linguagens e Frameworks</spam>
             <spam class="subtittle">Essas são algumas das minhas especialidades que atuo e realizo os projetos dos meus
-                clientes </spam>
+                clientes </spam>
         </div>
-
         <div class="tecnologias__content">
             <div class="display one">
-                <div class="display__icons"> <img src="" class="fa fa-brands fa-laravel alt=""></div>
-                <div class="text-content">
-
-                    <span class=" tittle">Laravel</span>
-                    <span class="subtittle"> - Criação de sistemas para empresas</span>
-                    <span class="subtittle"> - Integração do seu site com outros sistemas ou aplicações já
-                        prontos</span>
-                    <span class="subtittle"> - Manutenção de rotina em sistemas, e inclusão de novas funcionalidades ao
-                        seu
-                        criterio.</span>
-                </div>
+                <img src="" class="fa fa-brands fa-laravel alt="">
+                <span class=" tittle">Laravel</span>
+                <span class="subtittle"> - Criação de sistemas para empresas</span>
+                <span class="subtittle"> - Integração do seu site com outros sistemas ou aplicações já prontos</span>
+                <span class="subtittle"> - Manutenção de rotina em sistemas, e inclusão de novas funcionalidades ao seu
+                    criterio.</span>
             </div>
             <div class="display two">
-
-                <div class="display__icons"><img src="" class="fa fa-brands fa-node-js" alt=""></div>
-                <div class="text-content">
-
-                    <span class="tittle">Java Script</span>
-                    <span class="subtittle"> - Aplicação de novas funcionalidades no seu site</span>
-                    <span class="subtittle"> - Criação de novas regras e manutenção em possíveis erros do seu
-                        site</span>
-                    <span class="subtittle"> - Adequação do visual da sua pagina, deixando ele mais atraente e mais
-                        personalizado.</span>
-                </div>
+                <img src="" class="fa fa-brands fa-node-js" alt="">
+                <span class="tittle">Java Script</span>
+                <span class="subtittle"> - Aplicação de novas funcionalidades no seu site</span>
+                <span class="subtittle"> - Criação de novas regras e manutenção em possíveis erros do seu site</span>
+                <span class="subtittle"> - Adequação do visual da sua pagina, deixando ele mais atraente e mais
+                    personalizado.</span>
             </div>
             <div class="display three">
-
-                <div class="display__icons"><img src="" class="fa fa-solid fa-database" alt=""></div>
-                <div class="text-content">
-
-                    <span class="tittle">MySql / Oracle</span>
-                    <span class="subtittle"> - Gerenciamentos dos dados da sua aplicação e armazenamento com
-                        segurança</span>
-                    <span class="subtittle"> - Análise e criação de novos relatórios com os dados presente em seu
-                        sistema</span>
-                    <span class="subtittle"> - Manutenção de regras de négocio existentes e inclusão de novas conforme
-                        necessario.</span>
-                </div>
+                <img src="" class="fa fa-solid fa-database" alt="">
+                <span class="tittle">MySql / Oracle</span>
+                <span class="subtittle"> - Gerenciamentos dos dados da sua aplicação e armazenamento com
+                    segurança</span>
+                <span class="subtittle"> - Análise e criação de novos relatórios com os dados presente em seu
+                    sistema</span>
+                <span class="subtittle"> - Manutenção de regras de négocio existentes e inclusão de novas conforme
+                    necessario.</span>
             </div>
-
             <div class="display for">
-
-                <div class="display__icons"><img src="" class="fa fa-solid fa-people-group" alt="">
-                </div>
-                <div class="text-content">
-
-                    <span class="tittle">Crm's</span>
-                    <span class="subtittle"> - Atuação em Crm's para captura de novos leads e melhorar a qualificação
-                        dos
-                        mesmos</span>
-                    <span class="subtittle"> - Análise e consultoria do seu négocios para melhorar as regras de négocio
-                        existentes </span>
-                    <span class="subtittle"> - Atuação em novas campanhas de marketing nas redes socias para geração de
-                        leads.</span>
-                </div>
+                <img src="" class="fa fa-solid fa-people-group" alt="">
+                <span class="tittle">Crm's</span>
+                <span class="subtittle"> - Atuação em Crm's para captura de novos leads e melhorar a qualificação dos
+                    mesmos</span>
+                <span class="subtittle"> - Análise e consultoria do seu négocios para melhorar as regras de négocio
+                    existentes </span>
+                <span class="subtittle"> - Atuação em novas campanhas de marketing nas redes socias para geração de
+                    leads.</span>
             </div>
             <div class="display five">
-
-                <div class="display__icons"><img src="" class="fa fa-brands fa-wordpress-simple"
-                        alt=""></div>
-                <div class="text-content">
-
-                    <span class="tittle">Wordpress</span>
-                    <span class="subtittle"> - Criação de Landing pages para sua loja, comercio ou produto</span>
-                    <span class="subtittle"> - Criação de blogs individuais personalizados de acordo com a sua
-                        necessidade</span>
-                    <span class="subtittle"> - Manutenção do seu site e integração do seu site com outras plataformas,
-                        como
-                        facebook e instagram. </span>
-                </div>
+                <img src="" class="fa fa-brands fa-wordpress-simple" alt="">
+                <span class="tittle">Wordpress</span>
+                <span class="subtittle"> - Criação de Landing pages para sua loja, comercio ou produto</span>
+                <span class="subtittle"> - Criação de blogs individuais personalizados de acordo com a sua
+                    necessidade</span>
+                <span class="subtittle"> - Manutenção do seu site e integração do seu site com outras plataformas, como
+                    facebook e instagram. </span>
             </div>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projects__header">
             <spam class="tittle">Conheça alguns dos meus projetos</spam>
             <spam class="subtittle">Abaixo você pode conferir alguns dos meus projetos,
                 que já estão em produção e outros que estão em andamento para conher melhor o meu trabalho. </spam>
         </div>
         <div class="projects__content">
-            <div class="project one">
+            <div class="project one" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1200">
                 <spam class="tittle">DecFusion Ecommerce</spam>
                 <a href="https://github.com/leandrosilvarmos/decFusion"><button> Acesse para saber mais!</button></a>
 
             </div>
-            <div class="project two">
+            <div class="project two" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1200">
                 <spam class="tittle">Dashborad Analytics</spam>
                 <a href="https://analytics.zoho.com/open-view/1439015000030043522"><button> Acesse para saber
                         mais!</button></a>
             </div>
-            <div class="project three">
+            <div class="project three" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1200">
                 <spam class="tittle">Dashboard comercial</spam>
                 <a href="https://analytics.zoho.com/open-view/1439015000013892008"><button> Acesse para saber
                         mais!</button></a>
             </div>
-            <div class="project for">
+            <div class="project for" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1900">
                 <spam class="tittle">Projetos para um Hospital</spam>
                 <a href="https://github.com/leandrosilvarmos/hesapfiles">
                     <button> Acesse para saber mais!</button>
                 </a>
 
             </div>
-            <div class="project five">
+            <div class="project five" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1900">
                 <spam class="tittle">Hamburgueria</spam>
                 <button> Acesse para saber mais!</button>
             </div>
-            <div class="project six">
+            <div class="project six" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1900">
                 <spam class="tittle">Montagem de PC's</spam>
                 <button> Acesse para saber mais!</button>
             </div>
@@ -198,7 +176,7 @@
         </div>
     </section>
 
-    <section class="storyline">
+    <section class="storyline" id="storyline">
         <div class="storyline__header">
             <span class="tittle">
                 Conheça um pouco mais das minhas experiencias!
@@ -214,7 +192,7 @@
         </div>
 
         <div class="storyline__content">
-            <div class="experiencia">
+            <div class="experiencia" data-aos="fade-left" data-aos-offset="300">
                 <span class="tittle"> Fevereiro / 2019</span>
                 <span class="subtittle">Desenvolvedor FrontEnd - JR</span>
                 <span class="descricao">Minha primeira experiencia profissional
@@ -222,14 +200,14 @@
                     solução de problemas em ambinete real.</span>
                 </span>
             </div>
-            <div class="experiencia">
+            <div class="experiencia" data-aos="fade-left" data-aos-offset="300">
                 <span class="tittle"> Setembro / 2019</span>
                 <span class="subtittle">Assistente de TI - PL </span>
                 <span class="descricao"> Nessa nova oportunidade consegui agregar meus conhecimentos anteriores, e
                     trazer para a empresa
                     novas tecnologias, sistemas integrados e adequação das regras de negocios existentes. </span>
             </div>
-            <div class="experiencia">
+            <div class="experiencia" data-aos="fade-right" data-aos-offset="300">
                 <span class="tittle"> Fevereiro / 2022 </span>
                 <span class="subtittle">Analista de Sistemas e Lider de Equipe - JR</span>
                 <span class="descricao">Ainda na mesma empresa recebi uma promoção, ficando a partir desse momento
@@ -237,7 +215,7 @@
                     novos parceiros de tecnologia pra empresa, desenvolver novos projetos e recutrar novos
                     profissionais para o meu departamento.</span>
             </div>
-            <div class="experiencia">
+            <div class="experiencia" data-aos="fade-right" data-aos-offset="300">
                 <span class="tittle"> Julho / 2023 </span>
                 <span class="subtittle"> Analista de Sistemas - JR </span>
                 <span class="descricao"> Nessa nova empresa a qual estou atualmente responsavél por realizar
@@ -248,7 +226,7 @@
         </div>
     </section>
 
-    <section class="feedbacks">
+    <section class="feedbacks" id="feedbacks">
         <div class="feedbacks__header">
             <span class="tittle">Feedbacks de clientes e empresas!</span>
             <span class="subtittle">Aqui esta alguns cometarios deixados por clientes que atendi e empresas por onde
@@ -279,7 +257,7 @@
 
         <div class="contact__form">
             {{-- <form action="{{ route('feedback') }}" method="POST"> --}}
-                <form action="https://portifolio-93179d6d0b02.herokuapp.com/feedback" method="post">
+            <form action="https://portifolio-93179d6d0b02.herokuapp.com/feedback" method="post">
                 @csrf
                 <div class="input-group">
                     <div class="group-form">
@@ -347,76 +325,17 @@
 
     </footer>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const feedbacks = document.querySelectorAll('.comments__return');
-            let index = 0; // Ýndice do feedback atual
-
-            // Função para fazer a transição para o próximo feedback
-            function nextFeedback() {
-                const currentFeedback = feedbacks[index];
-                const nextIndex = (index + 1) % feedbacks.length;
-                const nextFeedback = feedbacks[nextIndex];
-
-                // Adiciona classe para animação de saída
-                currentFeedback.classList.add('fadeOut');
-
-                setTimeout(function() {
-                    // Remove a classe active do feedback atual
-                    currentFeedback.classList.remove('active', 'fadeOut');
-                    // Adiciona a classe active ao próximo feedback
-                    nextFeedback.classList.add('active');
-                    index = nextIndex; // Atualiza o índice do próximo feedback
-                }, 500); // Tempo da animação de saída
-
-                // Adiciona classe para animação de entrada
-                setTimeout(function() {
-                    nextFeedback.classList.add('fadeIn');
-                }, 550); // Tempo da animação de entrada
-            }
-
-            // Chamando a função para iniciar o carrossel automático
-            setInterval(nextFeedback, 6000); // Altere o tempo de rotação conforme necessário (3000 = 3 segundos)
-
-            // Exibir o primeiro feedback inicialmente
-            feedbacks[index].classList.add('active');
-        });
-
-        const stars = document.querySelectorAll('.rating input[type="radio"]');
-        const labels = document.querySelectorAll('.rating label');
-
-        stars.forEach((star, index) => {
-            star.addEventListener('change', function() {
-                for (let i = 0; i <= index; i++) {
-                    labels[i].style.color = '#DFEBF2'; // Marca os labels até o index selecionado
-                }
-                for (let i = index + 1; i < labels.length; i++) {
-                    labels[i].style.color = '#292526'; // Desmarca os labels após o index selecionado
-                }
-            });
-        });
-
-
-        document.addEventListener("DOMContentLoaded", function() {
-            const toggleMenu = document.querySelector(".toggle-menu");
-            const navigationHeader = document.querySelector(".navigation-header");
-
-            // Adiciona um ouvinte de evento de clique no ícone de toggle
-            toggleMenu.addEventListener("click", function() {
-                navigationHeader.classList.toggle("show-menu");
-            });
-
-            // Adiciona um ouvinte de evento de clique no documento inteiro
-            document.addEventListener("click", function(event) {
-                // Verifica se o clique ocorreu dentro do menu de navegação ou no ícone de toggle
-                if (!navigationHeader.contains(event.target) && !toggleMenu.contains(event.target)) {
-                    // Se o clique ocorreu fora do menu, fecha o menu
-                    navigationHeader.classList.remove("show-menu");
-                }
-            });
-        });
+        AOS.init();
     </script>
+
+    <script type="text/javascript" src="{{ asset('js/particle.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+
+    <a href="#" class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up toggle-top"></i>
+    </a>
 
 </body>
 
