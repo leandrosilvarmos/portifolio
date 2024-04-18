@@ -320,7 +320,6 @@
             <a href="">EXPERIENCIAS</a>
             <a href="">FEEDBACKS</a>
         </div>
-        {{-- <span>Direitos reservados - Leandro Ramos Silva @2024</span> --}}
 
 
     </footer>
