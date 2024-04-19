@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    
+
+
     <div class="navigation">
         <div id="particles-js"></div>
         <i class="fa-solid fa-bars toggle-menu"></i>
@@ -79,7 +80,6 @@
     </div>
 
 
-    
     <section class="tecnologias" id="tecnologias">
         <div class="tecnologias__header">
             <spam class="tittle"> Linguagens e Frameworks</spam>
@@ -166,11 +166,16 @@
             </div>
             <div class="project five" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1900">
                 <spam class="tittle">Hamburgueria</spam>
-                <button> Acesse para saber mais!</button>
+                <a href="">
+                    <button> Acesse para saber mais!</button>
+
+                </a>
             </div>
             <div class="project six" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1900">
                 <spam class="tittle">Montagem de PC's</spam>
-                <button> Acesse para saber mais!</button>
+                <a href="">
+                    <button> Acesse para saber mais!</button>
+                </a>
             </div>
 
         </div>
@@ -192,7 +197,7 @@
         </div>
 
         <div class="storyline__content">
-            <div class="experiencia" data-aos="fade-left" data-aos-offset="300">
+            <div class="experiencia" data-aos="zoom-in-down" data-aos-offset="300">
                 <span class="tittle"> Fevereiro / 2019</span>
                 <span class="subtittle">Desenvolvedor FrontEnd - JR</span>
                 <span class="descricao">Minha primeira experiencia profissional
@@ -200,14 +205,14 @@
                     solução de problemas em ambinete real.</span>
                 </span>
             </div>
-            <div class="experiencia" data-aos="fade-left" data-aos-offset="300">
+            <div class="experiencia" data-aos="zoom-in-up" data-aos-offset="300">
                 <span class="tittle"> Setembro / 2019</span>
                 <span class="subtittle">Assistente de TI - PL </span>
                 <span class="descricao"> Nessa nova oportunidade consegui agregar meus conhecimentos anteriores, e
                     trazer para a empresa
                     novas tecnologias, sistemas integrados e adequação das regras de negocios existentes. </span>
             </div>
-            <div class="experiencia" data-aos="fade-right" data-aos-offset="300">
+            <div class="experiencia" data-aos="zoom-in-up" data-aos-offset="300">
                 <span class="tittle"> Fevereiro / 2022 </span>
                 <span class="subtittle">Analista de Sistemas e Lider de Equipe - JR</span>
                 <span class="descricao">Ainda na mesma empresa recebi uma promoção, ficando a partir desse momento
@@ -215,7 +220,7 @@
                     novos parceiros de tecnologia pra empresa, desenvolver novos projetos e recutrar novos
                     profissionais para o meu departamento.</span>
             </div>
-            <div class="experiencia" data-aos="fade-right" data-aos-offset="300">
+            <div class="experiencia" data-aos="zoom-in-down" data-aos-offset="300">
                 <span class="tittle"> Julho / 2023 </span>
                 <span class="subtittle"> Analista de Sistemas - JR </span>
                 <span class="descricao"> Nessa nova empresa a qual estou atualmente responsavél por realizar
@@ -332,10 +337,9 @@
     <script type="text/javascript" src="{{ asset('js/particle.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 
-    <a href="#" class="scroll-to-top">
+    <a href="#scroll" class="scroll-to-top" id="scroll-to-top" style="display: none;">
         <i class="fa-solid fa-arrow-up toggle-top"></i>
     </a>
-
 </body>
 
 </html>
