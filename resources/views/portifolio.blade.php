@@ -334,8 +334,10 @@
         AOS.init();
     </script>
 
-    <script type="text/javascript" src="{{ asset('js/particle.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('js/particle.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script> --}}
+    <script type="text/javascript" src="https://portifolio-93179d6d0b02.herokuapp.com/js/particle.js"></script>
+    <script type="text/javascript" src="https://portifolio-93179d6d0b02.herokuapp.com/js/script.js"></script>
 
     <a href="#scroll" class="scroll-to-top" id="scroll-to-top" style="display: none;">
         <i class="fa-solid fa-arrow-up toggle-top"></i>
