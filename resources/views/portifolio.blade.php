@@ -301,7 +301,7 @@
     </section>
     <footer>
         <div class="footer__content">
-            <span class="tittle">Portfolio Profissional</span>
+            <span class="tittle">Portfolio profissional</span>
             <div class="footer__contacts">
                 <li>
                     <img src="" class="fa fa-solid fa-phone" alt="">
