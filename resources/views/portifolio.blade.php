@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
-    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css">
+    {{-- <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/reset.css">
+    <link rel="stylesheet" href="https://portifolio-93179d6d0b02.herokuapp.com/css/style.css"> --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <title>Portifolio</title>
@@ -138,8 +142,8 @@
     <section class="projects" id="projects">
         <div class="projects__header">
             <spam class="tittle">Conheça alguns dos meus projetos</spam>
-            <spam class="subtittle">Abaixo você pode conferir alguns dos meus projetos,
-                que já estão em produção e outros que estão em andamento para conher melhor o meu trabalho. </spam>
+            <spam class="subtittle">Abaixo você pode conferir alguns dos meus projetos
+                que já estão em produção e outros que estão em andamento para conhecer melhor o meu trabalho. </spam>
         </div>
         <div class="projects__content">
             <div class="project one" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1200">
@@ -319,11 +323,11 @@
         </div>
 
         <div class="footer__menu">
-            <a href="">SOBRE MIM</a>
-            <a href="">TECNOLOGIAS</a>
-            <a href="">PROJETOS</a>
-            <a href="">EXPERIENCIAS</a>
-            <a href="">FEEDBACKS</a>
+            <a href="#about-me">SOBRE MIM</a>
+            <a href="#tecnologias">TECNOLOGIAS</a>
+            <a href="#projects">PROJETOS</a>
+            <a href="#storyline">EXPERIENCIAS</a>
+            <a href="#feedbacks">FEEDBACKS</a>
         </div>
 
 
@@ -334,14 +338,18 @@
         AOS.init();
     </script>
 
-    {{-- <script type="text/javascript" src="{{ asset('js/particle.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script> --}}
-    <script type="text/javascript" src="https://portifolio-93179d6d0b02.herokuapp.com/js/particle.js"></script>
-    <script type="text/javascript" src="https://portifolio-93179d6d0b02.herokuapp.com/js/script.js"></script>
+    <script type="text/javascript" src="{{ asset('js/particle.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    {{-- <script type="text/javascript" src="https://portifolio-93179d6d0b02.herokuapp.com/js/particle.js"></script>
+    <script type="text/javascript" src="https://portifolio-93179d6d0b02.herokuapp.com/js/script.js"></script> --}}
 
-    <a href="#scroll" class="scroll-to-top" id="scroll-to-top" style="display: none;">
-        <i class="fa-solid fa-arrow-up toggle-top"></i>
-    </a>
+
+    <div class="up-page" id="up-page">
+        <a href="#scroll" class="scroll-button" id="scroll-button">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
 </body>
 
 </html>

@@ -85,13 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Aqui fica a parte do scroll top, o toogle que faz a página ir pra cima 
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollButton = document.querySelector(".scroll-to-top");
+    const scrollButton = document.querySelector(".scroll-button");
 
     window.addEventListener("scroll", function () {
-        // Mostrar ou ocultar o botão de scroll-to-top dependendo da posição do scroll
-        if (window.pageYOffset > 500) {
+        if (window.pageYOffset > 300 && window.innerWidth <= 768) {
             scrollButton.style.display = "block";
         } else {
             scrollButton.style.display = "none";
@@ -99,7 +97,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     scrollButton.addEventListener("click", function (event) {
-        event.preventDefault(); // Impede o comportamento padrão do link
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Rolagem suave de volta ao topo
+        event.preventDefault(); 
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
     });
 });
+
+
