@@ -1,20 +1,22 @@
-# Portfólio em Laravel
+# Portfólio Profissional
 
 Este é o repositório do meu portfólio desenvolvido em Laravel, CSS e JavaScript. Aqui você encontrará informações sobre mim, meus projetos, tecnologias que utilizo e muito mais.
 
 ## Sobre Mim
 
-![imagem pessoal](/images/foto-perfil.png)
-
-Esta seção apresenta uma breve descrição sobre mim, destacando minha profissão e experiência de trabalho.
+<img src="https://github.com/leandrosilvarmos/portifolio/blob/main/public/images/foto-perfil.png" alt="Imagem Pessoal" width="80"/> Esta seção apresenta uma breve descrição sobre mim, destacando minha profissão e experiência de trabalho.
 
 ## Tecnologias Utilizadas
 
 Nesta parte, você encontrará informações sobre as principais tecnologias que utilizo em meus projetos:
 
-- ![Laravel](https://laravel.com/img/favicon/favicon.ico) Laravel: Criação de sistemas para empresas, integração do seu site com outros sistemas ou aplicações já prontos, manutenção de rotina em sistemas e inclusão de novas funcionalidades.
-- ![CSS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg) CSS: Estilização e design responsivo das páginas.
-- ![JavaScript]([https://developer.mozilla.org/favicon.ico](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg)) JavaScript: Aplicação de novas funcionalidades no seu site, criação de novas regras e manutenção em possíveis erros, adequação do visual da sua página.
+- <img src="https://laravel.com/img/favicon/favicon.ico" alt="Laravel" width="20"/> Laravel: Criação de sistemas para empresas, integração do seu site com outros sistemas ou aplicações já prontos, manutenção de rotina em sistemas e inclusão de novas funcionalidades.
+
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="20"/> CSS: Estilização e design responsivo das páginas.
+
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="20"/> JavaScript: Aplicação de novas funcionalidades no seu site, criação de novas regras e manutenção em possíveis erros, adequação do visual da sua página.
+
+
 
 Cada tecnologia é acompanhada por uma breve descrição das suas aplicações.
 
