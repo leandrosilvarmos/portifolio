@@ -1,38 +1,40 @@
-# Portfólio em Laravel
+# PortfÃ³lio Profissional
 
-Este é o repositório do meu portfólio desenvolvido em Laravel, CSS e JavaScript. Aqui você encontrará informações sobre mim, meus projetos, tecnologias que utilizo e muito mais.
+Este Ã© o repositÃ³rio do meu portfÃ³lio desenvolvido em Laravel, CSS e JavaScript. Aqui vocÃª encontrarÃ¡ informaÃ§Ãµes sobre mim, meus projetos, tecnologias que utilizo e muito mais.
 
 ## Sobre Mim
 
-![imagem pessoal](/images/foto-perfil.png)
-
-Esta seção apresenta uma breve descrição sobre mim, destacando minha profissão e experiência de trabalho.
+<img src="https://github.com/leandrosilvarmos/portifolio/blob/main/public/images/foto-perfil.png" alt="Imagem Pessoal" width="80"/> Esta seÃ§Ã£o apresenta uma breve descriÃ§Ã£o sobre mim, destacando minha profissÃ£o e experiÃªncia de trabalho.
 
 ## Tecnologias Utilizadas
 
-Nesta parte, você encontrará informações sobre as principais tecnologias que utilizo em meus projetos:
+Nesta parte, vocÃª encontrarÃ¡ informaÃ§Ãµes sobre as principais tecnologias que utilizo em meus projetos:
 
-- ![Laravel](https://laravel.com/img/favicon/favicon.ico) Laravel: Criação de sistemas para empresas, integração do seu site com outros sistemas ou aplicações já prontos, manutenção de rotina em sistemas e inclusão de novas funcionalidades.
-- ![CSS](https://www.w3.org/Style/CSS/favicon.ico) CSS: Estilização e design responsivo das páginas.
-- ![JavaScript](https://developer.mozilla.org/favicon.ico) JavaScript: Aplicação de novas funcionalidades no seu site, criação de novas regras e manutenção em possíveis erros, adequação do visual da sua página.
+- <img src="https://laravel.com/img/favicon/favicon.ico" alt="Laravel" width="20"/> Laravel: CriaÃ§Ã£o de sistemas para empresas, integraÃ§Ã£o do seu site com outros sistemas ou aplicaÃ§Ãµes jÃ¡ prontos, manutenÃ§Ã£o de rotina em sistemas e inclusÃ£o de novas funcionalidades.
 
-Cada tecnologia é acompanhada por uma breve descrição das suas aplicações.
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="20"/> CSS: EstilizaÃ§Ã£o e design responsivo das pÃ¡ginas.
+
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="20"/> JavaScript: AplicaÃ§Ã£o de novas funcionalidades no seu site, criaÃ§Ã£o de novas regras e manutenÃ§Ã£o em possÃ­veis erros, adequaÃ§Ã£o do visual da sua pÃ¡gina.
+
+
+
+Cada tecnologia Ã© acompanhada por uma breve descriÃ§Ã£o das suas aplicaÃ§Ãµes.
 
 ## Projetos
 
-Aqui estão alguns dos meus projetos destacados. Cada projeto inclui um botão que leva você a uma página com mais informações sobre ele.
+Aqui estÃ£o alguns dos meus projetos destacados. Cada projeto inclui um botÃ£o que leva vocÃª a uma pÃ¡gina com mais informaÃ§Ãµes sobre ele.
 
-## Experiências
+## ExperiÃªncias
 
-Nesta seção, compartilho um pouco da minha trajetória profissional. Cada período de experiência listado mostra um momento-chave da minha carreira, desde as primeiras posições até as mais recentes.
+Nesta seÃ§Ã£o, compartilho um pouco da minha trajetÃ³ria profissional. Cada perÃ­odo de experiÃªncia listado mostra um momento-chave da minha carreira, desde as primeiras posiÃ§Ãµes atÃ© as mais recentes.
 
 ## Feedbacks
 
-Nesta parte, você pode encontrar feedbacks de clientes e empresas sobre meu trabalho. Cada comentário destaca a satisfação dos clientes e a qualidade do serviço prestado.
+Nesta parte, vocÃª pode encontrar feedbacks de clientes e empresas sobre meu trabalho. Cada comentÃ¡rio destaca a satisfaÃ§Ã£o dos clientes e a qualidade do serviÃ§o prestado.
 
 ## Contato
 
-Por fim, você pode entrar em contato comigo por telefone, e-mail ou LinkedIn. Fique à vontade para deixar seu feedback ou solicitar mais informações sobre meus serviços.
+Por fim, vocÃª pode entrar em contato comigo por telefone, e-mail ou LinkedIn. Fique Ã  vontade para deixar seu feedback ou solicitar mais informaÃ§Ãµes sobre meus serviÃ§os.
 
 - **Telefone:** (11)95237-3595
 - **E-mail:** leandro.ramos.silva@gmail.com
@@ -40,4 +42,4 @@ Por fim, você pode entrar em contato comigo por telefone, e-mail ou LinkedIn. Fi
 
 ---
 
-[Veja a página em ação!](https://portifolio-93179d6d0b02.herokuapp.com/)
+[Veja a pÃ¡gina em aÃ§Ã£o!](https://portifolio-93179d6d0b02.herokuapp.com/)
